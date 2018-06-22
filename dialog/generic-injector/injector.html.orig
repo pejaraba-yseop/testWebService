@@ -1,0 +1,62 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1"/>
+		
+		<script language="JavaScript" type="text/javascript" src="injector-settings/scripts/jquery-2.1.3.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="injector-settings/scripts/jquery-ui.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="injector-settings/scripts/jquery.validate.js"></script>
+		
+		<script language="JavaScript" type="text/javascript" src="injector-settings/scripts/injector-scripts.js"></script>		
+		<script language="JavaScript" type="text/javascript" src="../injector-properties.js"></script>
+		<script type="text/javascript" src="injector-settings/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+		<link type="text/css" href="injector-settings/css/cupertino/jquery-ui.custom.css" rel="stylesheet" />
+		<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<link href="injector-settings/css/injector.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/png" href="injector-settings/images/favicon.png">
+	</head>
+	<body>
+		<div id="toggleSettings"><i class="fa fa-cogs fa-2x"></i><br/>settings</div>
+		<div id="loading">
+		<div class="cssload-container">
+			<div class="cssload-lt"></div>
+			<div class="cssload-rt"></div>
+			<div class="cssload-lb"></div>
+			<div class="cssload-rb"></div>
+		</div>
+		<h3>The result is being generated...</h3>
+		</div>
+	</body>
+=======
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1"/>
+		
+		<script language="JavaScript" type="text/javascript" src="injector-settings/scripts/jquery-2.1.3.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="injector-settings/scripts/jquery-ui.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="injector-settings/scripts/jquery.validate.js"></script>
+		
+		<script language="JavaScript" type="text/javascript" src="injector-settings/scripts/injector-scripts.js"></script>		
+		<script language="JavaScript" type="text/javascript" src="../injector-properties.js"></script>
+		<script type="text/javascript" src="injector-settings/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+		<link type="text/css" href="injector-settings/css/cupertino/jquery-ui.custom.css" rel="stylesheet" />
+		<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<link href="injector-settings/css/injector.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/png" href="injector-settings/images/favicon.png">
+	</head>
+	<body>
+		<div id="toggleSettings"><i class="fa fa-cogs fa-2x"></i><br/>settings</div>
+		<div id="loading">
+		<div class="cssload-container">
+			<div class="cssload-lt"></div>
+			<div class="cssload-rt"></div>
+			<div class="cssload-lb"></div>
+			<div class="cssload-rb"></div>
+		</div>
+		<h3>The result is being generated...</h3>
+		</div>
+	</body>
+>>>>>>> 43843cf59c84783275d7e9f9ee32769512381305
+</html>

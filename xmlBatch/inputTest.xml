@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<y:input xmlns:y='http://www.yseop.com/engine/3'>
+	<y:datas>
+<y:instance yid='theGeneralData'>
+			<!--dialogId>793093</dialogId-->
+			<language yid="LANG_fr" />
+		</y:instance>
+	</y:datas>
+<y:dialog-session><y:user><y:login>admin</y:login>
+<y:full-name>admin</y:full-name>
+<y:additional-info>
+</y:additional-info>
+</y:user>
+</y:dialog-session></y:input>

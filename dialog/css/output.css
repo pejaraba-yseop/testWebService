@@ -1,0 +1,19 @@
+.regenBtn {
+	float: right;
+}
+
+#result ul {
+	padding-left: 40px;
+}
+
+#result ul li {
+	list-style-type: disc;
+}
+
+#result ul ul li {
+	list-style-type: circle;
+}
+
+#result ul ul ul li {
+	list-style-type: disc;
+}

@@ -1,0 +1,187 @@
+////////////////////////////////////////////////////////////////////////////////////
+//
+// File Name	: compil.ct
+//			
+// version		: Yseop Engine 4.00
+//
+// description	: Parameters for Compiler internal tables sizing.
+//				  These tables are loaded during compiler initialization.
+//
+////////////////////////////////////////////////////////////////////////////////////
+
+
+// -------------------  External Stack
+
+EXTERNAL_STACK				4000000
+
+// -------------------  Classes and associated components limits. Do NOT include predefined classes
+
+CLASSES						400
+
+CLASSES_MEMBERS				8000
+
+INHERIT_VALUES  			50000
+
+ONE_FATHER_INHERIT_SECTIONS	100
+
+// -------------------  Object numbers and associated structures limits. Do NOT include predefined objects
+
+SYMBOLIC_OBJECTS			50000
+
+IDENTIFIERS_CHARACTERS	    600000
+
+RUNTIME_ID_HASHCODE_SIZE	15013
+
+SYMBOLIC_OBJECTS_HEAP    	800000
+
+OAV        			 		40000
+
+GARBAGEABLE_NUMBERS			3000
+
+STRINGS			         	20000
+
+STRINGS_CHARACTERS			300000
+
+// -------------------  Adjacent tables and chained lists 
+
+DYN_TABLE_VALUES   			50000
+
+INITIAL_VALUES				5000
+
+STAT_TABLE_VALUES 			45000
+
+<6.0.0.M1-001>
+ENTRY_STAT_TABLE_VALUES		30000
+
+ACTIONS_SEQUENCE_LENGTH		600
+
+CONST_LIST_LENGTH       	500        
+
+SMALL_TABLES_LENGTH 		400
+
+LINKED_LIST_VALUES			60000
+
+<4.0.0.M9-063>
+DOUBLE_CHAINED_ELEMENTS		1000
+
+HASHMAP_VALUES				100      
+
+// -------------------  Triggers
+
+DICTIONARY_NODES 			1000
+
+TRIGGERS					1000
+
+// -------------------  Yseop Engine
+
+FILTER_VARIABLE_REFS    	10
+
+FILTER_VARIABLES_STACK   	20
+
+RULESETS_STACK  			5
+
+CONDITIONS_PER_FILTER		20
+
+ACTIONS_PER_RULE			20
+
+// -------------------  Yseop Text
+
+TEXT_OBJECT_SIZE       	    8192
+
+<!4.0.0.M9-063>
+TEXT_GRANULE_STRUCTURE_TOTAL_LENGTH	    600000
+
+<4.0.0.M9-063>
+TEXT_GRANULE_SKELETON_TOTAL_LENGTH	    600000
+
+<4.0.0.M9-063>
+TEXT_GRANULE_SKELETON_MAX_LENGTH	16384
+
+TEXT_GRANULE_WORDS_TOTAL_LENGTH		90000
+
+<4.0.0.M9-063>
+NO_PREDICT_EXTERN	16384
+
+<4.0.0.M9-063>
+DIFFERED_WORD		16384
+
+<4.0.0.M9-063>
+DIFFERED_WORD_PER_TEXT_GRANULE	128
+
+<4.0.0.M9-063>
+CALC_DIFFERED_ABSOLUTE_PER_TEXT_GRANULE	512
+
+<4.0.0.M9-063>
+TAGS_STACK				64
+
+<4.0.0.M9-063>
+TAG_INDIRECT_VALUES		16
+
+<4.0.0.M9-063>
+SWITCH_TAG_WIDTH		128
+
+<!4.0.0.M9-063>
+TAG_WHILE_STACK				16
+
+<!4.0.0.M9-063>
+TAG_FOREACH_STACK			16
+
+<!4.0.0.M9-063>
+TAG_SWITCH_STACK			16
+
+
+// -------------------  File Management
+
+BUFFERED_OPEN_FILES			10
+
+NOT_BUFFERED_OPEN_FILES		20
+
+TEMPORARY_FILES				20
+
+// -------------------  Functions
+
+FUNCTIONS_STACK 			10
+
+FUNCTION_PARAMETERS			5000
+
+LOCAL_REGISTERS 			100		
+
+LOCAL_OBJECTS				100
+
+<!6.2.0.M1-002>
+C_FUNCTIONS				    10
+
+// -------------------  Templates
+<!6.2.0.M1-002>
+TEMPLATES					10
+
+// -------------------  Local cast
+
+LOCAL_CAST					15
+
+DOMAIN_VALUES_INFERENCED	1500
+
+LOCAL_OAV_TRIPLETS			600
+
+// -------------------  Preprocessor
+
+PREPROCESSOR_DEFINES	    900
+
+PACKAGES					10
+
+// -------------------  Strings NOT object
+
+NOT_OBJECT_STRINGS       	200000 //100000
+
+<!6.0.0>
+NOT_OBJECT_STRINGS_SAVED  	500000
+
+// -------------------  Miscellaneous
+<!6.2.0.M1-002>
+EXTERN_NOT_REFERENCED    	2500
+
+LINE_SOURCE_STACK			50
+
+LOCAL_NAMES_STACK			10
+					
+OBJECTS_ASSERT_STACK		64

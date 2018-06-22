@@ -1,0 +1,14 @@
+function setLibActors()
+--> action
+{
+	LIBACTORS_CONFIG.referentialType = LibActors:SALUTATION_FULL_NAME;
+	LIBACTORS_CONFIG.referentialType := LibActors:SALUTATION_LAST_NAME;
+	LIBACTORS_CONFIG.referentialType := LibActors:SALUTATION_FIRST_NAME;
+	
+	LIBACTORS_CONFIG.anaphoraType = LibActors:PERSONAL_PRONOUN;
+	LIBACTORS_CONFIG.anaphoraType := LibActors:THE_CLIENT;
+	LIBACTORS_CONFIG.anaphoraType := LibActors:THIS_CLIENT;
+	LIBACTORS_CONFIG.anaphoraType := LibActors:OUR_CLIENT;
+	LIBACTORS_CONFIG.anaphoraType := LibActors:SALUTATION_LAST_NAME;
+}
+;

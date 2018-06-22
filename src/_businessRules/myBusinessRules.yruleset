@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yseop-yml:ymlRuleset xmlns:yseop-yml="http://www.yseop.com/yml/storage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" domainModelVersion="3" identifier="f79912fb-b97e-49d2-8cf5-d0fdde3c005c">
+    <yseop-yml:rules/>
+    <yseop-yml:name>myBusinessRules</yseop-yml:name>
+    <yseop-yml:properties identifier="bbc01195-7bdb-4205-ba98-dc332bc3947b">
+        <yseop-yml:property identifier="bbc01195-7bdb-4205-ba98-dc332bc3947b|dsl" type="YML_PROPERTY" name="dsl">"my business rules"</yseop-yml:property>
+    </yseop-yml:properties>
+</yseop-yml:ymlRuleset>

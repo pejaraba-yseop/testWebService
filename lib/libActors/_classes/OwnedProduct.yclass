@@ -1,0 +1,197 @@
+interface LibActors:OwnedProduct
+
+	field holders
+	--> domains LibActors:Person
+	--> multivalued true
+	--> dsl -> Textualization 
+                --> root "détenteurs"
+                --> language LANG_fr
+                --> gender MASCULINE
+                --> number PLURAL
+        ;
+		--> dsl -> Textualization 
+                --> root "poseedores"
+                --> language LANG_es
+                --> gender MASCULINE
+                --> number PLURAL
+        ;
+	--> dsl -> Textualization 
+            --> root "holders"
+            --> language LANG_en
+            --> number PLURAL
+    ;  
+	
+	field linkedOwnedProducts
+	--> domains LibActors:OwnedProduct
+	--> multivalued true
+	--> dsl -> Textualization 
+            --> root "produits liés"
+            --> language LANG_fr
+            --> gender MASCULINE
+            --> number PLURAL
+    ;
+	--> dsl -> Textualization 
+            --> root "productos relacionados"
+            --> language LANG_es
+            --> gender MASCULINE
+            --> number PLURAL
+    ;
+	--> dsl -> Textualization 
+            --> root "related product"
+            --> language LANG_en
+            --> number SINGULAR
+    ;    
+	
+    field product
+	--> domains LibActors:Product
+	--> dsl -> Textualization 
+            --> root "produit"
+            --> language LANG_fr
+            --> gender MASCULINE
+            --> number SINGULAR
+    ;
+	--> dsl -> Textualization 
+            --> root "producto"
+            --> language LANG_es
+            --> gender MASCULINE
+            --> number SINGULAR
+    ;
+	--> dsl -> Textualization 
+            --> root "product"
+            --> language LANG_en
+            --> number SINGULAR
+    ;
+
+	// ----------- classProperties ----------
+
+	classProperties
+	--> dsl		-> Textualization 
+                --> language	LANG_fr
+				--> root		"produit lié"
+                --> number		SINGULAR
+				;
+	--> dsl		-> Textualization 
+                --> language	LANG_es
+				--> root		"producto relacionado"
+                --> number		SINGULAR
+				;
+	--> dsl		-> Textualization 
+                --> language	LANG_en
+				--> root		"owned product"
+                --> number		SINGULAR
+				;
+; // LibActors:OwnedProduct
+
+implementation LibActors:OwnedProduct
+	override {
+		getNativeGender function
+		toStringInStream function
+	}
+;
+
+function LibActors:OwnedProduct::toStringInStream(
+			{	LibActors:WITH_OWNER,
+				LibActors:NO_ARTICLE_USAGE,
+				LibActors:PRONOUN_USAGE,
+				LibActors:NO_PRONOUN_USAGE,
+				LibActors:NO_PRODUCT_TYPE,
+				LibActors:THIS_PRODUCT_TYPE,
+				LibActors:THIS_PRODUCT,
+				LibActors:THE_PRODUCT_NAME,
+			} args)
+
+--> local Object products			
+
+static {
+
+	NlgRepresentant REPRESENTANT_OWNED_PRODUCT
+	--> modelForCollection true
+	--> referential		ifExpr ( this.isInstanceOf(Collection) == true)
+						then  	
+							\( 
+								\if(args[LibActors:WITH_OWNER] == true)
+									\libActors:_texts:productsWithOwner(myObject(this))
+								\else
+									\if(args[LibActors:NO_ARTICLE_USAGE] == true)
+										\value(products)
+									\else
+										\libActors:_texts:scanList(myObject(this))
+									\endIf
+								\endIf
+							\) 
+						else
+							\(	
+								\if(args[LibActors:WITH_OWNER] == true)
+									\value(product, _OWNER: this>>holders)
+								\else
+									\if(args[LibActors:NO_ARTICLE_USAGE] == true)
+										\value(product)
+									\else
+										\value(product, LibActors:THE_PRODUCT_NAME)
+									\endIf
+								\endIf
+							\)
+
+	--> anaphor		switchExprExclusive {
+	
+						case (args[LibActors:PRONOUN_USAGE] == true) : 
+							PERSONAL_PRONOUN
+							
+						case (args[LibActors:NO_PRONOUN_USAGE] == true) : 
+							[
+								\(	\value(products,LibActors:THIS_PRODUCT_TYPE)	\),
+								\(	\value(products,LibActors:THIS_PRODUCT)	\)
+							]	
+	
+						case (args[LibActors:THIS_PRODUCT_TYPE] == true) : 
+							\(	\value(products,LibActors:THIS_PRODUCT_TYPE)	\)										
+						
+						case (args[LibActors:NO_PRODUCT_TYPE] == true) : 
+							[
+								PERSONAL_PRONOUN,
+								\(	\value(products,LibActors:THIS_PRODUCT)	\)
+							]
+						
+						default :
+							[
+								PERSONAL_PRONOUN,
+								\(	
+									\beginSynonym
+										\choice
+											\value(products,LibActors:THIS_PRODUCT_TYPE)
+										\choice
+											\value(products,LibActors:THIS_PRODUCT)
+									\endSynonym
+								\)
+							]
+					}
+	;
+} // static
+--> action	{
+	
+	if(this.isInstanceOf(Collection) == true){
+		products = new(List);
+		foreach(_op, myObject(this)) {
+			products.add(_op.product);
+		}
+	} else {
+		products = product;
+	}
+	
+	REPRESENTANT_OWNED_PRODUCT.write (_REFERENT: this, args);
+
+	if(this.isInstanceOf(Collection) == true){
+		free(products);
+	}
+	
+	} 
+;
+
+							
+function LibActors:OwnedProduct::getNativeGender()
+--> return	ifExpr (product.gender != null)
+ 			then
+ 				product.gender
+			else
+				null
+;

@@ -1,0 +1,17 @@
+/* log */
+
+.info {
+  color: black;
+}
+
+.debug {
+  color: gray;
+}
+
+.error {
+  color: red;
+}
+
+.fatal {
+  color: red;
+}

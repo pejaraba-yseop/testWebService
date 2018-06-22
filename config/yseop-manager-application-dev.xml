@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yseop-manager>
+  <application>
+    <web-services>
+        <web-service name=”cube-facts”>
+                <url>http://192.168.200.168:8080/OLAP/facts</url>
+                <healthcheck-url>http://192.168.200.168:8080/healthcheck</healthcheck-url>
+        </web-service>
+	</web-services>
+    <runtime-path generated="true">C:\yseop\yseop-engine\yseop-engine-7.1.0.M2-003</runtime-path>
+    <runtime generated="true">erunbc_</runtime>
+  </application>
+</yseop-manager>

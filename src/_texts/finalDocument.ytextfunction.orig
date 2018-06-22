@@ -1,0 +1,258 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<yseop-yml:ymlTextFunction xmlns:yseop-yml="http://www.yseop.com/yml/storage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" domainModelVersion="3" identifier="d571d6d2-2b71-4821-8465-7cc0547ceaaf">
+    <yseop-yml:textGranule domainModelVersion="3" identifier="e56b3020-8142-4f06-847e-9b92b7eefd6a">
+        <yseop-yml:granuleI18nContents>
+            <yseop-yml:granuleUnilingueContent locale="en">
+                <yseop-yml:granuleContent>
+                    <yseop-yml:text>\beginStyle(BOLD_STYLE)
+    Congratulations!
+
+\endStyle
+
+
+\beginStyle(UNDERLINE_STYLE)
+    Congratulations!
+
+\endStyle
+
+
+\beginStyle(ITALIC_STYLE)
+    Congratulations!
+
+\endStyle
+
+\endOfLine
+\endOfLine
+this is the Simple Web Service
+
+\beginQuote(_DOUBLE_QUOTE_EN)
+    project
+
+\endQuote
+
+.
+\p</yseop-yml:text>
+                    <yseop-yml:inline-assemblies>
+                        <yseop-yml:bulletLinkAssembly name="PW1M" language="en">
+                            <yseop-yml:bulletListGeneralOptions>
+                                <yseop-yml:isNumberedList>false</yseop-yml:isNumberedList>
+                                <yseop-yml:isDecimalTypeSelected>true</yseop-yml:isDecimalTypeSelected>
+                                <yseop-yml:firstLetterUpperCaseForEachBullet>_NEVER</yseop-yml:firstLetterUpperCaseForEachBullet>
+                                <yseop-yml:endOfItemSuffixNothingSelected>true</yseop-yml:endOfItemSuffixNothingSelected>
+                                <yseop-yml:endOfItemSuffixOtherText/>
+                                <yseop-yml:endOfLastItemSuffixNothingSelected>true</yseop-yml:endOfLastItemSuffixNothingSelected>
+                                <yseop-yml:endOfLastItemSuffixOtherText/>
+                            </yseop-yml:bulletListGeneralOptions>
+                            <yseop-yml:beginEndWithOptions>
+                                <yseop-yml:generalBeginWithText/>
+                                <yseop-yml:generalEndWithText/>
+                                <yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemBeginWithSpecificText/>
+                                <yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemEndWithSpecificText/>
+                                <yseop-yml:allItemsIdenticalBeginWithSameAsGeneralSelected>true</yseop-yml:allItemsIdenticalBeginWithSameAsGeneralSelected>
+                                <yseop-yml:allItemsIdenticalBeginWithSpecificText/>
+                                <yseop-yml:allItemsIdenticalEndWithSameAsGeneralSelected>true</yseop-yml:allItemsIdenticalEndWithSameAsGeneralSelected>
+                                <yseop-yml:allItemsIdenticalEndWithSpecificText/>
+                                <yseop-yml:noItemGenerateNothingSelected>true</yseop-yml:noItemGenerateNothingSelected>
+                                <yseop-yml:noItemSentenceText/>
+                                <yseop-yml:inGeneralBulletBeginSameAsListSelected>true</yseop-yml:inGeneralBulletBeginSameAsListSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificSelected>false</yseop-yml:inGeneralBulletBeginSpecificSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificText/>
+                                <yseop-yml:inGeneralBulletEndSameAsListSelected>true</yseop-yml:inGeneralBulletEndSameAsListSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificSelected>false</yseop-yml:inGeneralBulletEndSpecificSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificText/>
+                            </yseop-yml:beginEndWithOptions>
+                            <yseop-yml:limitSizeOptions>
+                                <yseop-yml:noLimitSelected>true</yseop-yml:noLimitSelected>
+                                <yseop-yml:onlyFirstElementsNumberValue>3</yseop-yml:onlyFirstElementsNumberValue>
+                                <yseop-yml:sentenceSizeTypeValue>30</yseop-yml:sentenceSizeTypeValue>
+                                <yseop-yml:limitByTypeValue>words</yseop-yml:limitByTypeValue>
+                                <yseop-yml:limitByTypeNumber>0</yseop-yml:limitByTypeNumber>
+                                <yseop-yml:sentenceEndEtcSelected>true</yseop-yml:sentenceEndEtcSelected>
+                                <yseop-yml:sentenceEndOtherText/>
+                            </yseop-yml:limitSizeOptions>
+                        </yseop-yml:bulletLinkAssembly>
+                    </yseop-yml:inline-assemblies>
+                    <yseop-yml:inline-dslFunctionCalls/>
+                </yseop-yml:granuleContent>
+            </yseop-yml:granuleUnilingueContent>
+            <yseop-yml:granuleUnilingueContent locale="fr">
+                <yseop-yml:granuleContent>
+                    <yseop-yml:text>\beginStyle(BOLD_STYLE)
+	Félicitations !
+\endStyle
+\beginStyle(UNDERLINE_STYLE)
+	Félicitations !
+\endStyle
+\beginStyle(ITALIC_STYLE)
+	Félicitations !
+\endStyle
+\endOfLine
+\endOfLine
+Ceci est le 
+\beginQuote(_DOUBLE_QUOTE_EN)
+	projet 
+\endQuote
+Simple Web Service. </yseop-yml:text>
+                    <yseop-yml:inline-assemblies/>
+                    <yseop-yml:inline-dslFunctionCalls/>
+                </yseop-yml:granuleContent>
+            </yseop-yml:granuleUnilingueContent>
+        </yseop-yml:granuleI18nContents>
+        <yseop-yml:dslCondition/>
+        <yseop-yml:name/>
+        <yseop-yml:creationDate>2012-10-04T21:06:47.281Z</yseop-yml:creationDate>
+        <yseop-yml:properties identifier="048fcf5f-6a90-4edd-a538-7ee3468790fd">
+            <yseop-yml:property identifier="048fcf5f-6a90-4edd-a538-7ee3468790fd|condition" type="YML_PROPERTY" name="condition"></yseop-yml:property>
+        </yseop-yml:properties>
+    </yseop-yml:textGranule>
+    <yseop-yml:localVariables/>
+    <yseop-yml:advancedContent/>
+    <yseop-yml:functionParameters>
+        <yseop-yml:parameters/>
+    </yseop-yml:functionParameters>
+    <yseop-yml:ymlParameters/>
+    <yseop-yml:name>finalDocument</yseop-yml:name>
+    <yseop-yml:creationDate>2012-10-04T21:06:47.076Z</yseop-yml:creationDate>
+    <yseop-yml:properties identifier="9becc28f-c601-4ee4-a988-1d1d619b6f81">
+        <yseop-yml:property identifier="9becc28f-c601-4ee4-a988-1d1d619b6f81|dsl" type="YML_PROPERTY" name="dsl">"result"</yseop-yml:property>
+    </yseop-yml:properties>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<yseop-yml:ymlTextFunction xmlns:yseop-yml="http://www.yseop.com/yml/storage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" domainModelVersion="3" identifier="d571d6d2-2b71-4821-8465-7cc0547ceaaf">
+    <yseop-yml:textGranule domainModelVersion="3" identifier="e56b3020-8142-4f06-847e-9b92b7eefd6a">
+        <yseop-yml:granuleI18nContents>
+            <yseop-yml:granuleUnilingueContent locale="en">
+                <yseop-yml:granuleContent>
+                    <yseop-yml:text>\beginStyle(BOLD_STYLE)
+    Congratulations!
+
+\endStyle
+
+
+\beginStyle(UNDERLINE_STYLE)
+    Congratulations!
+
+\endStyle
+
+
+\beginStyle(ITALIC_STYLE)
+    Congratulations!
+
+\endStyle
+
+\endOfLine
+\endOfLine
+this is the Simple Web Service
+
+\beginQuote(_DOUBLE_QUOTE_EN)
+    project
+
+\endQuote
+
+.
+\p</yseop-yml:text>
+                    <yseop-yml:inline-assemblies>
+                        <yseop-yml:bulletLinkAssembly name="PW1M" language="en">
+                            <yseop-yml:bulletListGeneralOptions>
+                                <yseop-yml:isNumberedList>false</yseop-yml:isNumberedList>
+                                <yseop-yml:isDecimalTypeSelected>true</yseop-yml:isDecimalTypeSelected>
+                                <yseop-yml:firstLetterUpperCaseForEachBullet>_NEVER</yseop-yml:firstLetterUpperCaseForEachBullet>
+                                <yseop-yml:endOfItemSuffixNothingSelected>true</yseop-yml:endOfItemSuffixNothingSelected>
+                                <yseop-yml:endOfItemSuffixOtherText/>
+                                <yseop-yml:endOfLastItemSuffixNothingSelected>true</yseop-yml:endOfLastItemSuffixNothingSelected>
+                                <yseop-yml:endOfLastItemSuffixOtherText/>
+                            </yseop-yml:bulletListGeneralOptions>
+                            <yseop-yml:beginEndWithOptions>
+                                <yseop-yml:generalBeginWithText/>
+                                <yseop-yml:generalEndWithText/>
+                                <yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemBeginWithSpecificText/>
+                                <yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemEndWithSpecificText/>
+                                <yseop-yml:allItemsIdenticalBeginWithSameAsGeneralSelected>true</yseop-yml:allItemsIdenticalBeginWithSameAsGeneralSelected>
+                                <yseop-yml:allItemsIdenticalBeginWithSpecificText/>
+                                <yseop-yml:allItemsIdenticalEndWithSameAsGeneralSelected>true</yseop-yml:allItemsIdenticalEndWithSameAsGeneralSelected>
+                                <yseop-yml:allItemsIdenticalEndWithSpecificText/>
+                                <yseop-yml:noItemGenerateNothingSelected>true</yseop-yml:noItemGenerateNothingSelected>
+                                <yseop-yml:noItemSentenceText/>
+                                <yseop-yml:inGeneralBulletBeginSameAsListSelected>true</yseop-yml:inGeneralBulletBeginSameAsListSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificSelected>false</yseop-yml:inGeneralBulletBeginSpecificSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificText/>
+                                <yseop-yml:inGeneralBulletEndSameAsListSelected>true</yseop-yml:inGeneralBulletEndSameAsListSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificSelected>false</yseop-yml:inGeneralBulletEndSpecificSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificText/>
+                            </yseop-yml:beginEndWithOptions>
+                            <yseop-yml:limitSizeOptions>
+                                <yseop-yml:noLimitSelected>true</yseop-yml:noLimitSelected>
+                                <yseop-yml:onlyFirstElementsNumberValue>3</yseop-yml:onlyFirstElementsNumberValue>
+                                <yseop-yml:sentenceSizeTypeValue>30</yseop-yml:sentenceSizeTypeValue>
+                                <yseop-yml:limitByTypeValue>words</yseop-yml:limitByTypeValue>
+                                <yseop-yml:limitByTypeNumber>0</yseop-yml:limitByTypeNumber>
+                                <yseop-yml:sentenceEndEtcSelected>true</yseop-yml:sentenceEndEtcSelected>
+                                <yseop-yml:sentenceEndOtherText/>
+                            </yseop-yml:limitSizeOptions>
+                        </yseop-yml:bulletLinkAssembly>
+                    </yseop-yml:inline-assemblies>
+                    <yseop-yml:inline-dslFunctionCalls/>
+                </yseop-yml:granuleContent>
+            </yseop-yml:granuleUnilingueContent>
+            <yseop-yml:granuleUnilingueContent locale="fr">
+                <yseop-yml:granuleContent>
+                    <yseop-yml:text>\beginStyle(BOLD_STYLE)
+	Félicitations !
+\endStyle
+\beginStyle(UNDERLINE_STYLE)
+	Félicitations !
+\endStyle
+\beginStyle(ITALIC_STYLE)
+	Félicitations !
+\endStyle
+\endOfLine
+\endOfLine
+Ceci est le 
+\beginQuote(_DOUBLE_QUOTE_EN)
+	projet 
+\endQuote
+Simple Web Service. </yseop-yml:text>
+                    <yseop-yml:inline-assemblies/>
+                    <yseop-yml:inline-dslFunctionCalls/>
+                </yseop-yml:granuleContent>
+            </yseop-yml:granuleUnilingueContent>
+            <yseop-yml:granuleUnilingueContent locale="ja">
+                <yseop-yml:granuleContent>
+                    <yseop-yml:text/>
+                    <yseop-yml:inline-assemblies/>
+                    <yseop-yml:inline-dslFunctionCalls/>
+                </yseop-yml:granuleContent>
+            </yseop-yml:granuleUnilingueContent>
+            <yseop-yml:granuleUnilingueContent locale="nl">
+                <yseop-yml:granuleContent>
+                    <yseop-yml:text>\verb(VERB_NL_AANBIDDEN)</yseop-yml:text>
+                    <yseop-yml:inline-assemblies/>
+                    <yseop-yml:inline-dslFunctionCalls/>
+                </yseop-yml:granuleContent>
+            </yseop-yml:granuleUnilingueContent>
+        </yseop-yml:granuleI18nContents>
+        <yseop-yml:dslCondition/>
+        <yseop-yml:name/>
+        <yseop-yml:creationDate>2012-10-04T21:06:47.281Z</yseop-yml:creationDate>
+        <yseop-yml:properties identifier="048fcf5f-6a90-4edd-a538-7ee3468790fd">
+            <yseop-yml:property identifier="048fcf5f-6a90-4edd-a538-7ee3468790fd|condition" type="YML_PROPERTY" name="condition"></yseop-yml:property>
+        </yseop-yml:properties>
+    </yseop-yml:textGranule>
+    <yseop-yml:localVariables/>
+    <yseop-yml:advancedContent/>
+    <yseop-yml:functionParameters>
+        <yseop-yml:parameters/>
+    </yseop-yml:functionParameters>
+    <yseop-yml:ymlParameters/>
+    <yseop-yml:name>finalDocument</yseop-yml:name>
+    <yseop-yml:creationDate>2012-10-04T21:06:47.076Z</yseop-yml:creationDate>
+    <yseop-yml:properties identifier="9becc28f-c601-4ee4-a988-1d1d619b6f81">
+        <yseop-yml:property identifier="9becc28f-c601-4ee4-a988-1d1d619b6f81|dsl" type="YML_PROPERTY" name="dsl">"result"</yseop-yml:property>
+    </yseop-yml:properties>
+>>>>>>> Use of bootstrapWebService in Yseop Suite
+</yseop-yml:ymlTextFunction>

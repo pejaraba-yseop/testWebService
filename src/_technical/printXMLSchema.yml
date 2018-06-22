@@ -1,0 +1,16 @@
+function printXMLSchema(Class MyClass)
+static {
+	StringBuffer sb
+		--> maxSize 100000
+	;
+}
+--> local XmlStream xs
+--> domains String
+--> action {
+	xs = new(XmlStream);
+	xs.open(_WRITE, sb);
+	xs.writeSchema(MyClass);
+	xs.close();
+	sb.dump(File..getFile ("../dialog/inputSchema.xsd", _SOURCE_KB_DIR), SOURCE_CODE_FORMAT);
+}
+;

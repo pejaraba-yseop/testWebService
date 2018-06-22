@@ -1,0 +1,12 @@
+@defineValue BOOTSTRAP_WEB_SERVICE_VERSION 1.0.RC3
+/*
+RC1 : first edition of the manifest on a currently well developped bootstrap
+
+RC2 : migration of libActors RC02
+
+RC3 : UTF-8 migration. Works starting YBS-parfait (model-5)
+
+*/
+
+//repository url: 
+//owner akaeser@yseop.com;

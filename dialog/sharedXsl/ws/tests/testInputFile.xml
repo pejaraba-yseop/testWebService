@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope 
+	xmlns:soap="http://www.w3.org/2003/05/soap-envelope" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<getVisitesOutput xmlns="http://tempuri.org/">
+			<input>
+				<DemandesAvecActionsSurOffre>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>MONTAGUE BURTON SA</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>91140</LocalisationCp>
+				<LocalisationVille>VILLEJUST</LocalisationVille>
+				<ReferenceSociete>64157</ReferenceSociete>
+				<SurfaceMin>10000</SurfaceMin>
+				<SurfaceMax>20000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>23</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2002-03-15T00:00:00</DateCreation>
+				<DateReveil>2005-01-14T00:00:00</DateReveil>
+				<DateArchive>2005-01-14T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2002-04-09T00:00:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>OED OMNIUM EUROPEEN DISTRIBUTION</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>92700</LocalisationCp>
+				<LocalisationVille>COLOMBES</LocalisationVille>
+				<ReferenceSociete>22985</ReferenceSociete>
+				<SurfaceMin>25000</SurfaceMin>
+				<SurfaceMax>25000</SurfaceMax>
+				<Statut>23</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2002-03-21T00:00:00</DateCreation>
+				<DateReveil>2004-07-21T00:00:00</DateReveil>
+				<DateArchive>2004-07-21T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2003-04-25T00:00:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>SOCIETE AUXILIAIRE MANUTENTION ACCELERATION DENREES ALIMENTAIRES (SAMADA)</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>94320</LocalisationCp>
+				<LocalisationVille>THIAIS</LocalisationVille>
+				<ReferenceSociete>26925</ReferenceSociete>
+				<SurfaceMin>12000</SurfaceMin>
+				<SurfaceMax>15000</SurfaceMax>
+				<TypeMotivation>5</TypeMotivation>
+				<Statut>22</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir>2006-12-31T00:00:00</DateButoir>
+				<DateCreation>2004-01-30T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2007-07-18T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>95</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2006-07-21T14:40:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>GEFCO</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>92400</LocalisationCp>
+				<LocalisationVille>COURBEVOIE</LocalisationVille>
+				<ReferenceSociete>2424</ReferenceSociete>
+				<SurfaceMin>35000</SurfaceMin>
+				<SurfaceMax>45000</SurfaceMax>
+				<TypeMotivation>1</TypeMotivation>
+				<Statut>1</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2004-09-17T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2005-07-19T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2004-09-16T00:00:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>GEODIS SOLUTIONS</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>92110</LocalisationCp>
+				<LocalisationVille>CLICHY</LocalisationVille>
+				<ReferenceSociete>68577</ReferenceSociete>
+				<SurfaceMin>35000</SurfaceMin>
+				<SurfaceMax>40000</SurfaceMax>
+				<TypeMotivation>1</TypeMotivation>
+				<Statut>11</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2004-09-17T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive xsi:nil="true" />
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>92</string>
+				<string>91</string>
+				<string>94</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2004-09-16T00:00:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>FACOM</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>91420</LocalisationCp>
+				<LocalisationVille>MORANGIS</LocalisationVille>
+				<Activite>Logistique + siège social</Activite>
+				<ReferenceSociete>2633</ReferenceSociete>
+				<SurfaceMin>22000</SurfaceMin>
+				<SurfaceMax>30000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir>2008-01-01T00:00:00</DateButoir>
+				<DateCreation>2006-04-11T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2007-08-30T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2006-05-04T11:29:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>PERSONNE PHYSIQUE - DULAQUE</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>75116</LocalisationCp>
+				<LocalisationVille>PARIS</LocalisationVille>
+				<Activite>Stock textile</Activite>
+				<ReferenceSociete>98550</ReferenceSociete>
+				<SurfaceMin>7000</SurfaceMin>
+				<SurfaceMax>12000</SurfaceMax>
+				<TypeMotivation>1</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2006-06-15T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2007-03-01T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2006-06-20T12:36:16</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2006-06-20T12:36:16</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2006-06-20T12:36:16</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2006-06-20T12:36:16</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2006-06-20T12:36:16</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>KL SERVICES (GROUPE KEYSTONE)</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>91090</LocalisationCp>
+				<LocalisationVille>LISSES</LocalisationVille>
+				<ReferenceSociete>57195</ReferenceSociete>
+				<SurfaceMin>10000</SurfaceMin>
+				<SurfaceMax>15000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir>2007-06-30T00:00:00</DateButoir>
+				<DateCreation>2006-11-23T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2008-05-06T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2006-12-08T16:02:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>SME DISTRIBUTION (GROUPE ARVATO)</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>77600</LocalisationCp>
+				<LocalisationVille>BUSSY ST GEORGES</LocalisationVille>
+				<ReferenceSociete>104005</ReferenceSociete>
+				<SurfaceMin>20000</SurfaceMin>
+				<SurfaceMax>40000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir>2007-07-30T00:00:00</DateButoir>
+				<DateCreation>2007-01-25T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2007-06-01T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2007-01-24T13:27:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>KUEHNE AND NAGEL FRANCE IMMOBILIER</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>77164</LocalisationCp>
+				<LocalisationVille>FERRIERES EN BRIE</LocalisationVille>
+				<ReferenceSociete>56800</ReferenceSociete>
+				<SurfaceMin>35000</SurfaceMin>
+				<SurfaceMax>40000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2007-02-09T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2007-06-25T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2007-02-20T16:52:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>DELTA DIFFUSION (MEDIAPOST)</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>77185</LocalisationCp>
+				<LocalisationVille>LOGNES</LocalisationVille>
+				<ReferenceSociete>92523</ReferenceSociete>
+				<SurfaceMin>20000</SurfaceMin>
+				<SurfaceMax>30000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2008-02-21T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2008-09-22T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-03-07T11:35:01</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-03-10T10:41:31</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>TANG FRERES - SUPERMARCHE TANG</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>94400</LocalisationCp>
+				<LocalisationVille>VITRY SUR SEINE</LocalisationVille>
+				<ReferenceSociete>792</ReferenceSociete>
+				<SurfaceMin>8000</SurfaceMin>
+				<SurfaceMax>15000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>22</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2008-03-13T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2011-02-11T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				<string>94</string>
+				<string>91</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-03-13T18:50:35</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-04-18T11:46:16</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>TAT EXPRESS</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>37200</LocalisationCp>
+				<LocalisationVille>TOURS</LocalisationVille>
+				<ReferenceSociete>1229</ReferenceSociete>
+				<SurfaceMin>5000</SurfaceMin>
+				<SurfaceMax>6000</SurfaceMax>
+				<TypeMotivation>1</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2008-05-21T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2008-11-14T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				<string>91</string>
+				<string>94</string>
+				<string>95</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-05-21T18:48:16</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>AEXXDIS</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>78310</LocalisationCp>
+				<LocalisationVille>MAUREPAS</LocalisationVille>
+				<ReferenceSociete>22216</ReferenceSociete>
+				<SurfaceMin>10000</SurfaceMin>
+				<SurfaceMax>12000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>23</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2008-06-06T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2009-10-23T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				<string>14</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2008-09-25T14:14:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2009-07-17T09:24:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>L4 LOGISTICS</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>78530</LocalisationCp>
+				<LocalisationVille>BUC</LocalisationVille>
+				<Activite>Stockage colis</Activite>
+				<ReferenceSociete>67989</ReferenceSociete>
+				<SurfaceMin>5000</SurfaceMin>
+				<SurfaceMax>6000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>22</Statut>
+				<PriceMin>240000</PriceMin>
+				<PriceMax>300000</PriceMax>
+				<DateButoir>2008-12-31T00:00:00</DateButoir>
+				<DateCreation>2008-09-23T00:00:00</DateCreation>
+				<DateReveil>2008-12-01T00:00:00</DateReveil>
+				<DateArchive>2009-02-06T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-09-24T18:07:00</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-09-24T18:07:25</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-09-24T18:07:25</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-11-26T20:03:00</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>CASINO ENTREPRISE C FINANCE C PRATIQUE C NOUVEAU</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>42000</LocalisationCp>
+				<LocalisationVille>ST ETIENNE</LocalisationVille>
+				<ReferenceSociete>1554</ReferenceSociete>
+				<SurfaceMin>10000</SurfaceMin>
+				<SurfaceMax>20000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir>2009-01-10T00:00:00</DateButoir>
+				<DateCreation>2008-09-29T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2009-12-17T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				<string>78</string>
+				<string>91</string>
+				<string>92</string>
+				<string>93</string>
+				<string>94</string>
+				<string>95</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-10-09T10:37:35</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>MOBILIER NATIONAL ET MANUFACTURES NATIONALES DES GOBELINS, DE BEAUVAIS ET DE LA SAVONNERIE</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>75013</LocalisationCp>
+				<LocalisationVille>PARIS</LocalisationVille>
+				<Activite>Stockage de meubles</Activite>
+				<ReferenceSociete>123908</ReferenceSociete>
+				<SurfaceMin>4000</SurfaceMin>
+				<SurfaceMax>5000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>23</Statut>
+				<PriceMin>150000</PriceMin>
+				<PriceMax>225000</PriceMax>
+				<DateButoir>2008-12-31T00:00:00</DateButoir>
+				<DateCreation>2008-10-13T00:00:00</DateCreation>
+				<DateReveil>2008-11-01T00:00:00</DateReveil>
+				<DateArchive>2009-07-15T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>78</string>
+				<string>94</string>
+				<string>92</string>
+				<string>91</string>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-10-13T19:32:00</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-10-14T16:42:00</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2009-05-06T12:00:16</DateAction>
+				</ActionDemande>
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2008-10-20T10:30:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>SONY DADC FRANCE SAS</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>77550</LocalisationCp>
+				<LocalisationVille>MOISSY CRAMAYEL</LocalisationVille>
+				<Activite>stockage derogatoire</Activite>
+				<ReferenceSociete>126175</ReferenceSociete>
+				<SurfaceMin>3000</SurfaceMin>
+				<SurfaceMax>5000</SurfaceMax>
+				<TypeMotivation>1</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2008-12-19T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2009-02-06T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2008-12-29T10:34:29</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2009-01-08T18:16:36</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2009-01-26T09:26:18</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>SUPERGROUP</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>91070</LocalisationCp>
+				<LocalisationVille>BONDOUFLE</LocalisationVille>
+				<Activite>stockage</Activite>
+				<ReferenceSociete>117382</ReferenceSociete>
+				<SurfaceMin>8000</SurfaceMin>
+				<SurfaceMax>10000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2009-02-19T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2011-04-28T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2010-02-25T11:15:45</DateAction>
+				</ActionDemande>
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2010-02-26T10:00:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>PSA PEUGEOT CITROEN</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>75116</LocalisationCp>
+				<LocalisationVille>PARIS</LocalisationVille>
+				<ReferenceSociete>329</ReferenceSociete>
+				<SurfaceMin>45000</SurfaceMin>
+				<SurfaceMax>60000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2009-05-27T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2010-09-20T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>78</string>
+				<string>91</string>
+				<string>92</string>
+				<string>93</string>
+				<string>94</string>
+				<string>95</string>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2009-07-29T10:01:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>SERNAM LOGISTIQUE DISTRIBUTION INTEGREE - SERNAM LDI</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>93500</LocalisationCp>
+				<LocalisationVille>PANTIN</LocalisationVille>
+				<ReferenceSociete>64244</ReferenceSociete>
+				<SurfaceMin>5000</SurfaceMin>
+				<SurfaceMax>20000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2009-06-04T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2010-09-16T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>78</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2009-06-25T11:08:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>AUCHAN</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>77184</LocalisationCp>
+				<LocalisationVille>EMERAINVILLE</LocalisationVille>
+				<ReferenceSociete>73145</ReferenceSociete>
+				<SurfaceMin>40000</SurfaceMin>
+				<SurfaceMax>50000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>1</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2009-07-01T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive xsi:nil="true" />
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2009-06-30T10:05:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>DHL REAL ESTATE</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>_</LocalisationCp>
+				<LocalisationVille>MILTON KEYNES</LocalisationVille>
+				<ReferenceSociete>132109</ReferenceSociete>
+				<SurfaceMin>10000</SurfaceMin>
+				<SurfaceMax>15000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2009-09-28T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2010-09-16T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				<string>94</string>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2009-09-21T14:19:00</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>POSTE IMMO</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>75618</LocalisationCp>
+				<LocalisationVille>PARIS CEDEX</LocalisationVille>
+				<ReferenceSociete>31581</ReferenceSociete>
+				<SurfaceMin>20000</SurfaceMin>
+				<SurfaceMax>40000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2009-10-16T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2010-06-03T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				<string>91</string>
+				<string>92</string>
+				<string>93</string>
+				<string>94</string>
+				<string>95</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2009-10-16T15:14:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>DACHSER FRANCE (EX TRANSPORTS GRAVELEAU)</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>94400</LocalisationCp>
+				<LocalisationVille>VITRY SUR SEINE</LocalisationVille>
+				<ReferenceSociete>127446</ReferenceSociete>
+				<SurfaceMin>20000</SurfaceMin>
+				<SurfaceMax>25000</SurfaceMax>
+				<TypeMotivation>1</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2009-10-20T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2011-04-28T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>94</string>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2010-02-04T10:29:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>STAREXCEL</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>91700</LocalisationCp>
+				<LocalisationVille>STE GENEVIEVE DES BOIS</LocalisationVille>
+				<ReferenceSociete>133188</ReferenceSociete>
+				<SurfaceMin>20000</SurfaceMin>
+				<SurfaceMax>25000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2009-11-18T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2010-06-15T00:00:00</DateArchive>
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2009-11-17T16:09:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>SOCIETE DE DISTRIBUTION DE PRODUITS DE L'EDITION (SODIS)</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>77400</LocalisationCp>
+				<LocalisationVille>LAGNY SUR MARNE</LocalisationVille>
+				<ReferenceSociete>93313</ReferenceSociete>
+				<SurfaceMin>5000</SurfaceMin>
+				<SurfaceMax>10000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>1</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2010-04-16T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive xsi:nil="true" />
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>77</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2010-07-05T12:32:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>ABDSF ARVATO BUSINESS DEVELOPPEMENT SERVICES FRANCE</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>62880</LocalisationCp>
+				<LocalisationVille>VENDIN LE VIEIL</LocalisationVille>
+				<Activite>Prestation logistique</Activite>
+				<ReferenceSociete>137645</ReferenceSociete>
+				<SurfaceMin>30000</SurfaceMin>
+				<SurfaceMax>35000</SurfaceMax>
+				<TypeMotivation>1</TypeMotivation>
+				<Statut>21</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir>2010-08-01T00:00:00</DateButoir>
+				<DateCreation>2010-05-28T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive>2010-09-17T00:00:00</DateArchive>
+				<CodePostalRecherche>
+				<string>91070</string>
+				</CodePostalRecherche>
+				<DepartementRecherche />
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2010-05-20T08:30:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2010-05-20T08:30:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2010-05-20T08:30:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>AXELIS +</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>84000</LocalisationCp>
+				<LocalisationVille>AVIGNON</LocalisationVille>
+				<ReferenceSociete>138063</ReferenceSociete>
+				<SurfaceMin>10000</SurfaceMin>
+				<SurfaceMax>30000</SurfaceMax>
+				<TypeMotivation>1</TypeMotivation>
+				<Statut>1</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation>2010-06-17T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive xsi:nil="true" />
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>94</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2010-06-10T00:00:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>DECOUFLE</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>91380</LocalisationCp>
+				<LocalisationVille>CHILLY MAZARIN</LocalisationVille>
+				<Activite>Stockage / Montage</Activite>
+				<ReferenceSociete>143213</ReferenceSociete>
+				<SurfaceMin>2000</SurfaceMin>
+				<SurfaceMax>3000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>1</Statut>
+				<PriceMin>1</PriceMin>
+				<PriceMax>999999</PriceMax>
+				<DateButoir>2011-03-30T00:00:00</DateButoir>
+				<DateCreation>2011-03-21T00:00:00</DateCreation>
+				<DateReveil>2011-04-05T00:00:00</DateReveil>
+				<DateArchive xsi:nil="true" />
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2011-03-30T11:07:27</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>PHOENIX PHARMA</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>91130</LocalisationCp>
+				<LocalisationVille>RIS ORANGIS</LocalisationVille>
+				<Activite>Stockage produits pharmaceutiques</Activite>
+				<ReferenceSociete>144124</ReferenceSociete>
+				<SurfaceMin>4000</SurfaceMin>
+				<SurfaceMax>6000</SurfaceMax>
+				<TypeMotivation>3</TypeMotivation>
+				<Statut>1</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir>2011-07-01T00:00:00</DateButoir>
+				<DateCreation>2011-04-21T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive xsi:nil="true" />
+				<CodePostalRecherche />
+				<DepartementRecherche />
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2011-05-03T09:00:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>ABDSF ARVATO BUSINESS DEVELOPPEMENT SERVICES FRANCE</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>62880</LocalisationCp>
+				<LocalisationVille>VENDIN LE VIEIL</LocalisationVille>
+				<Activite>Logistique e-commerce</Activite>
+				<ReferenceSociete>137645</ReferenceSociete>
+				<SurfaceMin>12000</SurfaceMin>
+				<SurfaceMax>17000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>1</Statut>
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir>2011-07-01T00:00:00</DateButoir>
+				<DateCreation>2011-05-02T00:00:00</DateCreation>
+				<DateReveil xsi:nil="true" />
+				<DateArchive xsi:nil="true" />
+				<CodePostalRecherche />
+				<DepartementRecherche />
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2011-05-11T16:26:43</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2011-05-11T16:26:56</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2011-05-12T08:11:01</DateAction>
+				</ActionDemande>
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2011-05-18T10:15:28</DateAction>
+				</ActionDemande>
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2011-05-24T09:00:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>1</TypeAction>
+				<DateAction>2011-05-24T09:00:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<NomSociete>L-ACOUSTICS</NomSociete>
+				<IsDemandeCbre>true</IsDemandeCbre>
+				<LocalisationCp>91460</LocalisationCp>
+				<LocalisationVille>MARCOUSSIS</LocalisationVille>
+				<Activite>Déménagement du stockage ou démanagement du siège social</Activite>
+				<ReferenceSociete>52455</ReferenceSociete>
+				<SurfaceMin>10000</SurfaceMin>
+				<SurfaceMax>20000</SurfaceMax>
+				<TypeMotivation>2</TypeMotivation>
+				<Statut>1</Statut>
+				<PriceMin>1</PriceMin>
+				<PriceMax>999999999</PriceMax>
+				<DateButoir>2011-05-12T00:00:00</DateButoir>
+				<DateCreation>2011-05-05T00:00:00</DateCreation>
+				<DateReveil>2012-02-08T00:00:00</DateReveil>
+				<DateArchive xsi:nil="true" />
+				<CodePostalRecherche />
+				<DepartementRecherche>
+				<string>91</string>
+				</DepartementRecherche>
+				<VillesRecherchees />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande>
+				<TypeAction>9</TypeAction>
+				<DateAction>2011-05-20T14:45:00</DateAction>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<IsDemandeCbre>false</IsDemandeCbre>
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation xsi:nil="true" />
+				<DateReveil xsi:nil="true" />
+				<DateArchive xsi:nil="true" />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>36</TypeAction>
+				<DateAction>2008-04-10T14:58:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				<DemandeAvecActionsSurOffres>
+				<Demande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<IsDemandeCbre>false</IsDemandeCbre>
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<PriceMin xsi:nil="true" />
+				<PriceMax xsi:nil="true" />
+				<DateButoir xsi:nil="true" />
+				<DateCreation xsi:nil="true" />
+				<DateReveil xsi:nil="true" />
+				<DateArchive xsi:nil="true" />
+				</Demande>
+				<ActionAssocieeADemande xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<ActionDemande xsi:type="ActionVisite">
+				<TypeAction>36</TypeAction>
+				<DateAction>2009-03-20T11:29:00</DateAction>
+				<CrVisite>
+				<EnthousiasmeClient />
+				</CrVisite>
+				</ActionDemande>
+				</ActionAssocieeADemande>
+				</DemandeAvecActionsSurOffres>
+				</DemandesAvecActionsSurOffre>
+				<ActionsDirecte>
+				<ActionDirecte>
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">21</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2009-09-16T15:14:21.767</DateAction>
+				</ActionDirecte>
+				<ActionDirecte>
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">21</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2010-11-08T14:20:17.91</DateAction>
+				</ActionDirecte>
+				<ActionDirecte xsi:type="ActionRapportDeCom">
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">22</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2008-11-06T14:18:00</DateAction>
+				<PreviousSessionData>
+				<ConcurrenceDirecteIds />
+				<ConcurrenceElargieIds />
+				<SurfaceReference xsi:nil="true" />
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<RayonDeRecherche xsi:nil="true" />
+				<AfficherSiCbreMandateSurOffreConcurrentes xsi:nil="true" />
+				<LoyerReference xsi:nil="true" />
+				<UtiliserCritereLoyer xsi:nil="true" />
+				<AfficherProprietaireOffresConcurrentes xsi:nil="true" />
+				<AfficherSocieteDansTableauProspectApproches xsi:nil="true" />
+				</PreviousSessionData>
+				</ActionDirecte>
+				<ActionDirecte xsi:type="ActionRapportDeCom">
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">22</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2009-02-05T17:05:00</DateAction>
+				<PreviousSessionData>
+				<ConcurrenceDirecteIds />
+				<ConcurrenceElargieIds />
+				<SurfaceReference xsi:nil="true" />
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<RayonDeRecherche xsi:nil="true" />
+				<AfficherSiCbreMandateSurOffreConcurrentes xsi:nil="true" />
+				<LoyerReference xsi:nil="true" />
+				<UtiliserCritereLoyer xsi:nil="true" />
+				<AfficherProprietaireOffresConcurrentes xsi:nil="true" />
+				<AfficherSocieteDansTableauProspectApproches xsi:nil="true" />
+				</PreviousSessionData>
+				</ActionDirecte>
+				<ActionDirecte xsi:type="ActionRapportDeCom">
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">22</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2009-04-21T17:17:00</DateAction>
+				<PreviousSessionData>
+				<ConcurrenceDirecteIds />
+				<ConcurrenceElargieIds />
+				<SurfaceReference xsi:nil="true" />
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<RayonDeRecherche xsi:nil="true" />
+				<AfficherSiCbreMandateSurOffreConcurrentes xsi:nil="true" />
+				<LoyerReference xsi:nil="true" />
+				<UtiliserCritereLoyer xsi:nil="true" />
+				<AfficherProprietaireOffresConcurrentes xsi:nil="true" />
+				<AfficherSocieteDansTableauProspectApproches xsi:nil="true" />
+				</PreviousSessionData>
+				</ActionDirecte>
+				<ActionDirecte xsi:type="ActionRapportDeCom">
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">22</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2009-06-09T10:47:00</DateAction>
+				<PreviousSessionData>
+				<ConcurrenceDirecteIds />
+				<ConcurrenceElargieIds />
+				<SurfaceReference xsi:nil="true" />
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<RayonDeRecherche xsi:nil="true" />
+				<AfficherSiCbreMandateSurOffreConcurrentes xsi:nil="true" />
+				<LoyerReference xsi:nil="true" />
+				<UtiliserCritereLoyer xsi:nil="true" />
+				<AfficherProprietaireOffresConcurrentes xsi:nil="true" />
+				<AfficherSocieteDansTableauProspectApproches xsi:nil="true" />
+				</PreviousSessionData>
+				</ActionDirecte>
+				<ActionDirecte xsi:type="ActionRapportDeCom">
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">22</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2009-11-04T11:50:00</DateAction>
+				<PreviousSessionData>
+				<ConcurrenceDirecteIds />
+				<ConcurrenceElargieIds />
+				<SurfaceReference xsi:nil="true" />
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<RayonDeRecherche xsi:nil="true" />
+				<AfficherSiCbreMandateSurOffreConcurrentes xsi:nil="true" />
+				<LoyerReference xsi:nil="true" />
+				<UtiliserCritereLoyer xsi:nil="true" />
+				<AfficherProprietaireOffresConcurrentes xsi:nil="true" />
+				<AfficherSocieteDansTableauProspectApproches xsi:nil="true" />
+				</PreviousSessionData>
+				</ActionDirecte>
+				<ActionDirecte xsi:type="ActionRapportDeCom">
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">22</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2010-01-18T09:20:00</DateAction>
+				<PreviousSessionData>
+				<ConcurrenceDirecteIds />
+				<ConcurrenceElargieIds />
+				<SurfaceReference xsi:nil="true" />
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<RayonDeRecherche xsi:nil="true" />
+				<AfficherSiCbreMandateSurOffreConcurrentes xsi:nil="true" />
+				<LoyerReference xsi:nil="true" />
+				<UtiliserCritereLoyer xsi:nil="true" />
+				<AfficherProprietaireOffresConcurrentes xsi:nil="true" />
+				<AfficherSocieteDansTableauProspectApproches xsi:nil="true" />
+				</PreviousSessionData>
+				</ActionDirecte>
+				<ActionDirecte xsi:type="ActionRapportDeCom">
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">22</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2010-09-02T11:46:00</DateAction>
+				<PreviousSessionData>
+				<ConcurrenceDirecteIds />
+				<ConcurrenceElargieIds />
+				<SurfaceReference xsi:nil="true" />
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<RayonDeRecherche xsi:nil="true" />
+				<AfficherSiCbreMandateSurOffreConcurrentes xsi:nil="true" />
+				<LoyerReference xsi:nil="true" />
+				<UtiliserCritereLoyer xsi:nil="true" />
+				<AfficherProprietaireOffresConcurrentes xsi:nil="true" />
+				<AfficherSocieteDansTableauProspectApproches xsi:nil="true" />
+				</PreviousSessionData>
+				</ActionDirecte>
+				<ActionDirecte xsi:type="ActionRapportDeCom">
+				<TypeAction xmlns="http://tempuri.org/sharedObjectsIntegration">22</TypeAction>
+				<DateAction xmlns="http://tempuri.org/sharedObjectsIntegration">2011-01-14T10:25:00</DateAction>
+				<PreviousSessionData>
+				<ConcurrenceDirecteIds />
+				<ConcurrenceElargieIds />
+				<SurfaceReference xsi:nil="true" />
+				<SurfaceMin xsi:nil="true" />
+				<SurfaceMax xsi:nil="true" />
+				<RayonDeRecherche xsi:nil="true" />
+				<AfficherSiCbreMandateSurOffreConcurrentes xsi:nil="true" />
+				<LoyerReference xsi:nil="true" />
+				<UtiliserCritereLoyer xsi:nil="true" />
+				<AfficherProprietaireOffresConcurrentes xsi:nil="true" />
+				<AfficherSocieteDansTableauProspectApproches xsi:nil="true" />
+				</PreviousSessionData>
+				</ActionDirecte>
+				</ActionsDirecte>
+				<OffreCbre>
+				<Mandat xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<MandatId>34668</MandatId>
+				<DateDebutMandat>2010-10-01T00:00:00</DateDebutMandat>
+				<DateFinMandat>2011-09-30T00:00:00</DateFinMandat>
+				<DateEnregistrementMandat>2010-10-28T00:00:00</DateEnregistrementMandat>
+				<MandatTypeId>2</MandatTypeId>
+				<LibelleMandat>SIMPLE (O)</LibelleMandat>
+				<MandatAvancementId>3</MandatAvancementId>
+				<LibelleAvancement>Formalisé</LibelleAvancement>
+				</Mandat>
+				<Cle xmlns="http://tempuri.org/sharedObjectsIntegration">19503</Cle>
+				<VenteUtilisateur xmlns="http://tempuri.org/sharedObjectsIntegration">false</VenteUtilisateur>
+				<DateCreationOffre xmlns="http://tempuri.org/sharedObjectsIntegration">2001-11-06T00:00:00</DateCreationOffre>
+				<DateArchive xsi:nil="true" xmlns="http://tempuri.org/sharedObjectsIntegration" />
+				<CoordonneesX xmlns="http://tempuri.org/sharedObjectsIntegration">615685</CoordonneesX>
+				<CoordonneesY xmlns="http://tempuri.org/sharedObjectsIntegration">2406184</CoordonneesY>
+				<OffreDirecte xmlns="http://tempuri.org/sharedObjectsIntegration">true</OffreDirecte>
+				<Disponibilite xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<TypeDispo>51</TypeDispo>
+				<NbMoisDispo xsi:nil="true" />
+				<DateDispo xsi:nil="true" />
+				<LibelleDispo>Immédiate</LibelleDispo>
+				<AvisDispoSaisiPrivate>1</AvisDispoSaisiPrivate>
+				<AvisDispoCalculePrivate>1</AvisDispoCalculePrivate>
+				</Disponibilite>
+				<Loyer xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<LoyerMaxiAuMetreCarre>120</LoyerMaxiAuMetreCarre>
+				<LoyerMiniAuMetreCarre>53</LoyerMiniAuMetreCarre>
+				<LoyerGlobal>0</LoyerGlobal>
+				<LoyerTexte>53.00 à 120.00 /m2/an HT HC</LoyerTexte>
+				<LoyerMinBureaux>120</LoyerMinBureaux>
+				<LoyerMaxBureaux>120</LoyerMaxBureaux>
+				<LoyerMinActivitesEntrepots>53</LoyerMinActivitesEntrepots>
+				<LoyerMaxActivitesEntrepots>53</LoyerMaxActivitesEntrepots>
+				<LoyerMinCommerce xsi:nil="true" />
+				<LoyerMaxCommerce xsi:nil="true" />
+				<LoyerMoyenBureaux>120</LoyerMoyenBureaux>
+				</Loyer>
+				<PrixDeVente xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<PrixDeVenteMaxiAuMetreCarre>0</PrixDeVenteMaxiAuMetreCarre>
+				<PrixDeVenteMiniAuMetreCarre>0</PrixDeVenteMiniAuMetreCarre>
+				<PrixDeVenteGlobal>0</PrixDeVenteGlobal>
+				<PrixDeVenteMinBureaux xsi:nil="true" />
+				<PrixDeVenteMaxBureaux xsi:nil="true" />
+				<PrixDeVenteMinActivitesEntrepots xsi:nil="true" />
+				<PrixDeVenteMaxActivitesEntrepots xsi:nil="true" />
+				<PrixDeVenteMinCommerce xsi:nil="true" />
+				<PrixDeVenteMaxCommerce xsi:nil="true" />
+				<PrixCessionDeBail xsi:nil="true" />
+				<PrixPasDePorte xsi:nil="true" />
+				</PrixDeVente>
+				<Adresse xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<Titre>ZA LA BORNE BLANCHE</Titre>
+				<AdresseG>BOULEVARD DE L'EUROPE</AdresseG>
+				<LibelleCommune>COMBS LA VILLE</LibelleCommune>
+				<CodePostalA>77380</CodePostalA>
+				<Acces>ACCES ROUTIERS :
+				Francilienne (N 104) " échangeurs n° 24/ 25
+				A 5 - A 6 - A 10 - A 4 - A 1
+				R E R "D" : Combs la Ville/Quincy ou Lieusaint Moissy
+				AEROPORTS : 
+				Orly : 20 min par l'A6 ou la RN7
+				Roissy charles de Gaulle : 40 min par N 104
+				Port de Bonneuil sur Marne : 10 mn du site</Acces>
+				<NbParkings xsi:nil="true" />
+				<NbParkingsInterieurs xsi:nil="true" />
+				<NbParkingsExterieurs xsi:nil="true" />
+				<NbParkingsDoubles xsi:nil="true" />
+				<NbParkingsProximite xsi:nil="true" />
+				<Zone>PARC D'ACTIVITES DE PARIS SUD</Zone>
+				<CodeDepartement>78</CodeDepartement>
+				<LibelleDepartement>Seine-et-Marne</LibelleDepartement>
+				<Region>Ile-de-France</Region>
+				<RueOuVoie>BOULEVARD DE L'EUROPE</RueOuVoie>
+				</Adresse>
+				<ImpotsCharges xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<TaxeEntrepot>0</TaxeEntrepot>
+				<UniteTaxeEntrepot>/m²/an</UniteTaxeEntrepot>
+				<ImpotFoncier>0</ImpotFoncier>
+				<UniteImpotFoncier>m²/an</UniteImpotFoncier>
+				<ChargesMinActivitesEntrepots>3</ChargesMinActivitesEntrepots>
+				<ChargesMaxActivitesEntrepots>3</ChargesMaxActivitesEntrepots>
+				<ChargesMinBureaux>3</ChargesMinBureaux>
+				<ChargesMaxBureaux>3</ChargesMaxBureaux>
+				<ChargesMinCommerces xsi:nil="true" />
+				<ChargesMaxCommerces xsi:nil="true" />
+				</ImpotsCharges>
+				<ZonesOffre xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<string>18</string>
+				<string>27</string>
+				<string>32</string>
+				<string>35</string>
+				<string>72</string>
+				</ZonesOffre>
+				<TexteSurface xmlns="http://tempuri.org/sharedObjectsIntegration">40 482 m² divisibles à partir de 10 000 m²</TexteSurface>
+				<TexteAmenagement xmlns="http://tempuri.org/sharedObjectsIntegration">Site clos
+				Bâtiment traversant 
+				40 portes à quais
+				Niveleurs électriques : 9 T et 6 T en dynamiques, 3 m de long x 2,20 m de large, avec une amplitude +/- 0,35 m 
+				Portes sectionnelles manuelles 3 m L x 3,30 m H
+				Sas d'étanchéité
+				Butées de quais fixes sur platine
+				Accès piétons sécurisé depuis les quais
+				Fosses pour passage dehayons (8 unités)
+				Alarme sonore de type 4
+				Sprinkler de type ESFRO NFPA
+				RIA
+				Aire de manoeuvre : 35 m
+				Hauteur sous-plafond : &gt; à 10 m
+				Chauffage gaz par aérothermes
+				Locaux de charge
+				Parkings :
+				VL : 180 emplacements
+				PL  : 8 emplacements
+				4 bornes de recharge pour les véhicules électriques</TexteAmenagement>
+				<NatureOffre xmlns="http://tempuri.org/sharedObjectsIntegration">20</NatureOffre>
+				<TypeBail xmlns="http://tempuri.org/sharedObjectsIntegration">2</TypeBail>
+				<EtatImmeuble xmlns="http://tempuri.org/sharedObjectsIntegration">1</EtatImmeuble>
+				<EtatOffre xmlns="http://tempuri.org/sharedObjectsIntegration">1</EtatOffre>
+				<TypeLocVte xmlns="http://tempuri.org/sharedObjectsIntegration">1</TypeLocVte>
+				<Surface xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<Divisible>true</Divisible>
+				<SurfaceMin>10000</SurfaceMin>
+				<SurfaceTotale>40482</SurfaceTotale>
+				<SurfaceMinBureaux>0</SurfaceMinBureaux>
+				<SurfaceMaxBureaux>2028</SurfaceMaxBureaux>
+				<SurfaceMinActivitesEntrepots>10000</SurfaceMinActivitesEntrepots>
+				<SurfaceMaxActivitesEntrepots>37040</SurfaceMaxActivitesEntrepots>
+				<SurfaceMinCommerce>0</SurfaceMinCommerce>
+				<SurfaceMaxCommerce>0</SurfaceMaxCommerce>
+				<FlagDivisibilteSpecifiqueBureaux>true</FlagDivisibilteSpecifiqueBureaux>
+				<FlagDivisibilteSpecifiqueActivitesEntrepots>true</FlagDivisibilteSpecifiqueActivitesEntrepots>
+				<FlagDivisibilteSpecifiqueCommerce>false</FlagDivisibilteSpecifiqueCommerce>
+				<SurfacePondereeCommerce xsi:nil="true" />
+				<SurfaceRdcCommerce xsi:nil="true" />
+				<SurfacePlusGrandLotBureaux>2028</SurfacePlusGrandLotBureaux>
+				</Surface>
+				<Structure xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<SurfaceMoyenneDesLots>2028</SurfaceMoyenneDesLots>
+				<NbDeLots>1</NbDeLots>
+				<NbEtages>0</NbEtages>
+				<ImmeubleGrandeHauteur>false</ImmeubleGrandeHauteur>
+				<ImmeubleIndependant>true</ImmeubleIndependant>
+				<Erp>false</Erp>
+				<EmbranchementFer>1</EmbranchementFer>
+				<EcartTypeSurfaceMoyenneParEtages xsi:nil="true" />
+				<BatimentAQuai>false</BatimentAQuai>
+				<NbPortesAQuai xsi:nil="true" />
+				<NbLotsActi>8</NbLotsActi>
+				<SurfaceMoyenneDesLotsActi>4630</SurfaceMoyenneDesLotsActi>
+				<NbBatimentsActi>1</NbBatimentsActi>
+				<NbLotsCommerce xsi:nil="true" />
+				<NbEtagesCommerce xsi:nil="true" />
+				<Niveaux>
+				<string>13</string>
+				</Niveaux>
+				<HauteurMinSousPoutre xsi:nil="true" />
+				<HauteurMaxSousPoutre xsi:nil="true" />
+				<ResistanceSol xsi:nil="true" />
+				<BatimentPlainPied>false</BatimentPlainPied>
+				<NbPortesPlainPied xsi:nil="true" />
+				<NbEtagesActi>1</NbEtagesActi>
+				</Structure>
+				<DeclarationsIcpe xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<string>2663</string>
+				<string>1412</string>
+				</DeclarationsIcpe>
+				<AutorisationsIcpe xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<string>2663</string>
+				<string>1510</string>
+				<string>1432</string>
+				<string>1430</string>
+				</AutorisationsIcpe>
+				<ClasseBatiment xmlns="http://tempuri.org/sharedObjectsIntegration">A</ClasseBatiment>
+				<CommuneOffre xmlns="http://tempuri.org/sharedObjectsIntegration">31668</CommuneOffre>
+				<DepartementOffre xmlns="http://tempuri.org/sharedObjectsIntegration">78</DepartementOffre>
+				<StadeCommercialisationSaisiPrivate xmlns="http://tempuri.org/sharedObjectsIntegration">1</StadeCommercialisationSaisiPrivate>
+				<StadeCommercialisationCalculePrivate xmlns="http://tempuri.org/sharedObjectsIntegration">1</StadeCommercialisationCalculePrivate>
+				<InfosProprietaire xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<RaisonSocialeProprietaire>BLEECKER - FULTON</RaisonSocialeProprietaire>
+				<RepresentantProprietaire>Monsieur Benoît COLIN</RepresentantProprietaire>
+				</InfosProprietaire>
+				<InfosGestionnaire xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<PrenomGestionnaire>Stéphane</PrenomGestionnaire>
+				<NomGestionnaire>ARNOUX (GLS)</NomGestionnaire>
+				<QuadrigrammeGestionnaire>SARN-GCL</QuadrigrammeGestionnaire>
+				<TelFixeGestionnaire>+33 (0)1 53 64 36 83</TelFixeGestionnaire>
+				<TelMobileGestionnaire>+33 (0)6 08 18 38 71</TelMobileGestionnaire>
+				<AdresseEmailGestionnaire>stephane.arnoux@cbre.fr</AdresseEmailGestionnaire>
+				<AdresseLocalisationGestionnaire>
+				145-151, rue de Courcelles - BP 80450 - 75824 Paris cedex 17</AdresseLocalisationGestionnaire>
+				<NegociateurId>1566</NegociateurId>
+				<AgenceId>2</AgenceId>
+				<AgenceNom>GLS</AgenceNom>
+				<EquipeId>297</EquipeId>
+				<EquipeNom>GLS-IDF</EquipeNom>
+				</InfosGestionnaire>
+				<PhotosOffre xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<UrlPetitDescriptif>http://logipro/Dataagence/Gro_2/offre/19503/VD_PERSPECTIVE.jpg</UrlPetitDescriptif>
+				<UrlMoyenDescriptif>http://logipro/Dataagence/Gro_2/offre/19503/ID_PERSPECTIVE.jpg</UrlMoyenDescriptif>
+				<UrlOriginalDescriptif>http://logipro/Dataagence/Gro_2/offre/19503/HD_PERSPECTIVE.jpg</UrlOriginalDescriptif>
+				<UrlGrandDescriptif>http://logipro/Dataagence/Gro_2/offre/19503/LD_PERSPECTIVE.jpg</UrlGrandDescriptif>
+				<UrlPlanSituation>http://logipro/Dataagence/Gro_2/adresse/77/77380/273067/GP_273067.png</UrlPlanSituation>
+				<UrlPdfDescriptifImmagine>http://logipro/Descros/Pdf_Multi.asp?DescroType=1&amp;Adresse=1&amp;EntetePied=1&amp;agence_id=2&amp;negociateur_id=1566&amp;groupe_id=2&amp;ensemble_id=1&amp;Selection=19503</UrlPdfDescriptifImmagine>
+				</PhotosOffre>
+				<DpeOffre xsi:nil="true" xmlns="http://tempuri.org/sharedObjectsIntegration" />
+				<LettreDpeOffre xmlns="http://tempuri.org/sharedObjectsIntegration" />
+				<PhraseAccroche xmlns="http://tempuri.org/sharedObjectsIntegration">Bâtiment traversant bénéficiant d'un embranchement fer, représentant environ 40.000 m².</PhraseAccroche>
+				<Ressources xmlns="http://tempuri.org/sharedObjectsIntegration">
+				<DatePosePanneau>2008-03-04T00:00:00</DatePosePanneau>
+				<LibellePanneau>Pied simple face</LibellePanneau>
+				<TypePanneauId>10</TypePanneauId>
+				<PanneauId>7894</PanneauId>
+				<UrlWebImm>http://www.webimm.com/offres/annonceDetails.asp?AnnonceId=46242</UrlWebImm>
+				<UrlCbre>http://immobilier.entreprise.cbre.fr/fr-fr/offre-19503.html</UrlCbre>
+				<LibellePublicationWeb>CBRE sans adresse + Webimm</LibellePublicationWeb>
+				<TypePublicationWebId>6</TypePublicationWebId>
+				<HauteurPanneau>6</HauteurPanneau>
+				<LargeurPanneau>3</LargeurPanneau>
+				<UrlVideoOffre>http://www.visiteonline.fr/video-immobiliere.aspx?c=12784555&amp;r=li</UrlVideoOffre>
+				</Ressources>
+				</OffreCbre>
+				<AfficherDemandeurSurProposition>false</AfficherDemandeurSurProposition>
+			</input>
+		</getVisitesOutput>
+	</soap:Body>
+</soap:Envelope>

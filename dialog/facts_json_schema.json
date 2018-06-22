@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "LibCube Facts Results Schema",
+    "description": "JSON Schema describing the structure of a result containing a list of facts from a query.",
+    "type": "object",
+    "properties": {
+        "facts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "yclass": {
+                        "type": "string"
+                    },
+                    "members": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "yid": {
+                                    "type": "string"
+                                },
+                                "yclass": { "type": "string" }
+                            }
+                        }
+                    },
+                    "factMeasures": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "yclass": {
+                                    "type": "string"
+                                },
+                                "measure": {
+                                    "type": "object",
+                                    "properties": {
+                                        "yid": {
+                                            "type": "string"
+                                        },
+                                        "yclass": { "enum": [ "LibCube:Measure" ] }
+                                    },
+                                    "required": ["yid", "yclass"]
+                                },
+                                "value": {
+                                    "type": "number"
+                                },
+                                "textValue": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": ["yid", "measure"]
+                        }
+                    }
+                },
+                "required": ["yclass", "members", "factMeasures"]
+            }
+        }
+    }
+}

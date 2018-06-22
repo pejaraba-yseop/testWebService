@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title></title>
+  
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+  
+		<script language="JavaScript" type="text/javascript" src="injector-settings/scripts/jquery-2.1.3.min.js"></script>			
+		<script language="JavaScript" type="text/javascript" src="../injector-properties.js"></script>
+		
+  		<link href="injector-settings/css/injector.css" rel="stylesheet" type="text/css" />
+		<link href="injector-settings/css/tabPage.css" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet" type="text/css" />
+<style>
+	form {
+		margin-left: 20pt;
+	}
+	
+	h3 {
+		margin-left: 20pt;
+		color:#333333;
+		font-weight: normal;
+	}
+	
+	textarea {
+		border-radius: 6pt;
+	}
+	
+	.button {
+		background-color:rgba(51,165,255,0.8);
+		font-family: Raleway;
+		padding:8pt;
+		margin-top:10pt;
+		
+	}
+	
+	.button:hover {
+		background-color:rgba(51,165,255,1);
+	}
+</style>
+</head>
+
+<body>
+
+<div id="header"><h2></h2></div>
+<p>
+
+<h3>Paste xml here :</h3>
+
+<form accept-charset="UTF-8" method="post"><p>
+ 
+  <textarea name="xml" rows="35" cols="130" wrap="virtual"></textarea>
+  <br/>
+  <input type="submit" class="button" name="envoyer" value="Submit">
+
+</form>
+
+<script>
+
+var pn = location.pathname.match(/([^\/]*)\/generic-injector/)[1];
+		if (pn != null && project.name == null) {
+      project.name = pn;
+    }
+	
+$(document).ready(function() {
+
+	$("#header h2").text((project.title != undefined ? project.title : "My Project") );
+	$("title").text((project.title != undefined ? project.title : "My Project") );
+	$("form").attr("action", "../../../direct/" + project.name + "/dialog.do");
+});
+
+</script>
+
+</body>
+
+</html>

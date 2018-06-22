@@ -1,0 +1,231 @@
+body {
+	padding:0;
+	margin:0;
+	font-family:Roboto;
+	background:#F3F3F3;
+}
+/*
+#header {
+	width:95px;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	padding:0;
+	 background: #ffffff;
+    box-shadow: 0 0 9px #333;
+	z-index:100;
+}
+
+#logoContainer {
+	z-index:200;
+	top:15pt;
+	margin-left:8px;
+	width:80px;
+	text-align:center;
+	position:fixed;
+}
+#logo {
+	float:none;
+	margin-left:15px;
+}
+
+.byYseop {
+	color:#263D4F;
+	padding:0;
+}
+
+#result, #questions, #answers {
+	border-radius:0;
+	padding-top:10pt;
+	margin-bottom:40px;
+	background:#FFFFFF;
+}
+#result {
+	margin-top:180px;
+	width:74%;
+
+	margin-left:390px;
+}
+
+#questions, #answers {
+	margin-top: -10px;
+	margin-left: -15px;
+	margin-right: -15px;
+	width: inherit;
+}
+
+#questions .span12, #answers .span12{
+	padding: 15px
+}
+
+
+#result.moved,
+#title h2.moved 
+{
+	margin-left:200px;
+	width:80%;
+}
+
+
+
+#xmlLink,
+#languages,
+#titleResult,
+#buildXML
+{
+	display: none;
+}
+
+.theReport b:first-child {
+	color:#3285C6;
+	font-size:18pt;
+}
+
+
+.theReport b {
+	color:#999999;
+	font-size:13pt;
+}
+
+#generateReport {
+	float:right;
+	border-radius:0;
+	background:#3285C6;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding:10px;
+	margin: 0pt 0pt 5pt 5pt;
+}
+*/
+#cases h4 a{
+	
+	margin:15px 0 15px 10px;
+	font-size:16pt;
+	color:#ffffff;
+	width:230px;
+}
+
+#cases .button {
+	width:90%;
+	display:block;
+	background:none;
+	border:2px solid #FFFFFF;
+	border-radius: 10px;
+}
+
+#cases .button:hover,
+#cases .selected {
+	background:#FFFFFF;
+	color:#3285C6;
+}
+#cases ul li {
+	min-width:45%;
+}	
+/*
+#buildAndLaunch {
+	border-radius:70px;
+	padding:12px;
+	background: rgb(114,216,167);
+	margin-bottom:30px;
+	color:#FFFFFF;
+	font-size:12pt;
+	text-decoration: none;
+}
+#buildAndLaunch:hover{
+	background: rgba(114,216,167,0.9);
+	text-decoration: none;
+}
+#listeFieldSetDemande .text {
+	margin-left:0;
+}
+#listeFieldSetDemande .text h4 a{
+	margin-top:40px;
+	font-weight: bold;
+}
+*/
+#listeFieldSetDemande .ui-slider {
+	margin:-23px 0 25px 0 ;
+	width:150px;
+}
+
+#listeFieldSetDemande .text li label{
+	width:170px;
+	margin-bottom:-30px;
+	float:left;
+}
+#listeFieldSetDemande .sliderValue {
+	color:#FFFFFF;
+	border:2px solid #FFFFFF;
+	width:40px;
+	height:40px;
+	border-radius: 40px;
+	text-align: center;
+	font-size:12pt;
+	margin-top:10pt;
+	float:right;
+	margin-right:20px;
+}
+/*
+.ui-slider-handle {
+	
+}
+
+
+#tabs>ul:first-child {
+	display:none;
+}
+*/
+
+
+@media(max-width: 1400px){
+	#result,
+	#title h2{
+	max-width:850px;
+}
+
+#result.moved,
+	#title h2.moved{
+	max-width:1000px;
+}
+}
+
+@media(min-width: 1400px) and (max-width: 1600px){
+	#result,
+	#title h2{
+	max-width:1000px;
+}
+
+#result.moved,
+	#title h2.moved{
+	max-width:1150px;
+}
+}
+
+
+@media(max-width: 1024px){
+	#result,
+	#title h2{
+	max-width:600px;
+}
+
+#result.moved,
+	#title h2.moved{
+	max-width:750px;
+}
+}
+
+
+#title h2, #titleQA h2 {
+    display: table;
+}
+#title h2 img, #titleQA h2 img {
+    height: 100px;
+    background: white;
+    border-radius: 5px;
+    border: solid black 2px;
+}
+#title h2 span, #titleQA h2 span {
+    display: table-cell;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yseop-yml:ymlTextFunction xmlns:yseop-yml="http://www.yseop.com/yml/storage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" domainModelVersion="3" identifier="c3e12c8b-e561-4241-a5ed-b180a33860b6">
+    <yseop-yml:textGranule domainModelVersion="3" identifier="c790a0db-dab4-418e-8d63-ea5136de2c5d">
+        <yseop-yml:granuleI18nContents>
+            <yseop-yml:granuleUnilingueContent locale="fr">
+                <yseop-yml:granuleContent>
+                    <yseop-yml:text></yseop-yml:text>
+                    <yseop-yml:inline-assemblies>
+                        <yseop-yml:singleSentenceLinkAssembly name="reduced" language="fr">
+                            <yseop-yml:chooseSeparatorOptions>
+                                <yseop-yml:beforeEachItemCommaSelected>true</yseop-yml:beforeEachItemCommaSelected>
+                                <yseop-yml:beforeEachItemOtherText/>
+                                <yseop-yml:beforeLastItemAndSelected>true</yseop-yml:beforeLastItemAndSelected>
+                                <yseop-yml:beforeLastItemOtherText/>
+                                <yseop-yml:maxCountOfItemsForEachSentenceValue>3</yseop-yml:maxCountOfItemsForEachSentenceValue>
+                                <yseop-yml:endOfSentenceDotSelected>true</yseop-yml:endOfSentenceDotSelected>
+                                <yseop-yml:endOfSentenceQuestionMarkSelected>false</yseop-yml:endOfSentenceQuestionMarkSelected>
+                                <yseop-yml:endOfSentenceOtherSelected>false</yseop-yml:endOfSentenceOtherSelected>
+                                <yseop-yml:switchThresholdValue>4</yseop-yml:switchThresholdValue>
+                            </yseop-yml:chooseSeparatorOptions>
+                            <yseop-yml:beginEndWithOptions>
+                                <yseop-yml:generalBeginWithText/>
+                                <yseop-yml:generalEndWithText/>
+                                <yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemBeginWithSpecificText/>
+                                <yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemEndWithSpecificText/>
+                                <yseop-yml:allItemsIdenticalBeginWithSameAsGeneralSelected>true</yseop-yml:allItemsIdenticalBeginWithSameAsGeneralSelected>
+                                <yseop-yml:allItemsIdenticalBeginWithSpecificText/>
+                                <yseop-yml:allItemsIdenticalEndWithSameAsGeneralSelected>true</yseop-yml:allItemsIdenticalEndWithSameAsGeneralSelected>
+                                <yseop-yml:allItemsIdenticalEndWithSpecificText/>
+                                <yseop-yml:noItemGenerateNothingSelected>true</yseop-yml:noItemGenerateNothingSelected>
+                                <yseop-yml:noItemSentenceText/>
+                                <yseop-yml:inGeneralBulletBeginSameAsListSelected>true</yseop-yml:inGeneralBulletBeginSameAsListSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificSelected>false</yseop-yml:inGeneralBulletBeginSpecificSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificText/>
+                                <yseop-yml:inGeneralBulletEndSameAsListSelected>true</yseop-yml:inGeneralBulletEndSameAsListSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificSelected>false</yseop-yml:inGeneralBulletEndSpecificSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificText/>
+                            </yseop-yml:beginEndWithOptions>
+                            <yseop-yml:limitSizeOptions>
+                                <yseop-yml:noLimitSelected>true</yseop-yml:noLimitSelected>
+                                <yseop-yml:onlyFirstElementsNumberValue>3</yseop-yml:onlyFirstElementsNumberValue>
+                                <yseop-yml:sentenceSizeTypeValue>30</yseop-yml:sentenceSizeTypeValue>
+                                <yseop-yml:limitByTypeValue>words</yseop-yml:limitByTypeValue>
+                                <yseop-yml:limitByTypeNumber>0</yseop-yml:limitByTypeNumber>
+                                <yseop-yml:sentenceEndEtcSelected>true</yseop-yml:sentenceEndEtcSelected>
+                                <yseop-yml:sentenceEndOtherText/>
+                                <yseop-yml:hasWordCharOptions>true</yseop-yml:hasWordCharOptions>
+                            </yseop-yml:limitSizeOptions>
+                        </yseop-yml:singleSentenceLinkAssembly>
+                    </yseop-yml:inline-assemblies>
+                    <yseop-yml:inline-dslFunctionCalls/>
+                </yseop-yml:granuleContent>
+            </yseop-yml:granuleUnilingueContent>
+        </yseop-yml:granuleI18nContents>
+        <yseop-yml:dslCondition/>
+        <yseop-yml:name/>
+        <yseop-yml:creationDate>2015-04-14T14:02:41.525Z</yseop-yml:creationDate>
+        <yseop-yml:properties identifier="de8b67e4-d71d-4640-933b-522ce8376a97"/>
+    </yseop-yml:textGranule>
+    <yseop-yml:advancedContent/>
+    <yseop-yml:functionParameters>
+        <yseop-yml:parameters/>
+    </yseop-yml:functionParameters>
+    <yseop-yml:ymlParameters>Collection persons</yseop-yml:ymlParameters>
+    <yseop-yml:name>reducedFirstName</yseop-yml:name>
+    <yseop-yml:creationDate>2015-04-14T14:02:41.369Z</yseop-yml:creationDate>
+    <yseop-yml:properties identifier="372690b8-c158-4573-82fd-d79a5fa07cd1"/>
+</yseop-yml:ymlTextFunction>

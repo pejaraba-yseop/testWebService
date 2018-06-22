@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE HTML [
+<!ELEMENT html (#PCDATA) >
+<!ENTITY nbsp    " ">
+]>
+
+<page title="Template fwDialog" class="preview"
+	 xmlns:fi="http://apache.org/cocoon/forms/1.0#instance"
+	 xmlns:ft="http://apache.org/cocoon/forms/1.0#template"
+	 xmlns:jx="http://apache.org/cocoon/templates/jx/1.0">
+
+  <jx:import uri="resource://org/apache/cocoon/forms/generation/jx-macros.xml"/>
+
+	<head-part><![CDATA[
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootswatch.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="generic-injector/injector-settings/images/favicon.png">
+		
+	]]></head-part>
+  
+<content class="preview">
+
+<fi:includeform>
+  <!-- Navbar
+    ================================================== -->
+<!-- 		 <div class="navbar navbar-fixed-top">
+		   <div class="navbar-inner">
+			 <div class="container">
+			   <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				 <span class="icon-bar"></span>
+				 <span class="icon-bar"></span>
+				 <span class="icon-bar"></span>
+			   </a>
+			   <a class="brand" href="../">Yseop Simple Dialog Project Bootstrap</a>
+			   <div class="nav-collapse" id="main-menu">
+			   </div>
+			 </div>
+		   </div>
+		 </div> -->
+
+
+    <div class="container">
+		<!-- <section id="linkedIn"> -->
+	  <div id="titleQA" class="row">
+		
+	  </div>
+
+	  <!-- Headings & Paragraph Copy -->
+	  <div id="questions" class="row">
+		<div class="span12">
+			<fi:include id="_technical:situationQualification"/>
+		</div>
+
+		<div class="span12">
+			<fi:include id="zoneNextButton"/>				
+		</div>
+
+	  </div>
+
+		<!-- </section> -->
+
+	  <footer id="footer">
+			<div class="page-header">
+				<h3>
+					Logs <small>(can be hidden)</small>
+				</h3>
+			</div>
+			<div>
+				<fi:include id="engine-logs"/>
+			</div>
+	  </footer>
+
+    </div><!-- /container -->
+
+  
+    
+</fi:includeform>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="scripts/jquery-1.11.2.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/application.js"></script>
+    <script src="injector-properties.js"></script>
+    <script src="scripts/questionsAnswers.js"></script>
+
+</content>
+</page>

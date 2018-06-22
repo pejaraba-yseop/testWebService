@@ -1,0 +1,124 @@
+body {
+	padding:0;
+	margin:0;
+	font-family:Roboto;
+	background:url(../images/bg-page.jpg);
+	background-attachment: fixed;
+	background-size:cover;
+}
+#header{
+	background:none;
+	height:auto;
+}
+
+#title {
+	width:100%;
+	height:auto;
+	position:fixed;
+	top:0;
+	left:0;
+	padding:0 0 0 20px;
+	max-height:65px;
+	 background: #ffffff;
+    box-shadow: 0 0 9px #333;
+	z-index:100;
+	overflow:hidden;
+}
+
+#toggleSettings {
+	display: none;
+}
+
+#properties {
+	padding:0;
+	position: relative;
+	background:none;
+	width:80%;
+	margin:auto;
+	border-radius:0;
+}
+#propertiesItems {
+	border-radius : 8pt;
+}
+
+#properties > ul > li {
+    display: inline;
+}
+#listeFieldSetDemande{
+	width:100%;
+	/*background: #FFFFFF;
+	box-shadow: 0px 4px 10px #666666;*/
+	max-height:none;
+	padding-left:25px;
+	padding-right:30px;
+	border-radius: 0;
+}
+
+.ui-widget-content{
+	border:none;
+}
+
+
+#title h2, #titleQA h2 {
+	color:#3285C6;
+	padding:20px 0 30px 20px;
+	background-size:cover;
+	background-position:center;
+	font-size:30px;
+}
+#title h2 {
+	margin:0 auto 0 auto;
+	text-align: center;
+	font-weight: 400;
+}
+#titleQA h2 {
+	width:100%;
+	margin-left: 0px;
+	font-weight: 400;
+}
+#title h2.clientLogo, #titleQA h2.clientLogo {
+	padding:30px 0 30px 20px;
+}
+#title .fa-bolt {
+	margin-right:15px;
+	padding:10px 19px 10px 19px;
+	border:3px solid #FFFFFF;
+	border-radius:50px;
+}
+
+#tabs {
+	width:100%;
+	padding:0;
+	height:1px;
+}
+#tab1 {
+	padding-bottom:130pt;
+	width:100%;
+	background-size:cover;
+}
+
+#logoContainer {
+	z-index:200;
+	top:0;
+	margin-left:8px;
+	width:auto;
+	text-align:center;
+	position:fixed;
+	display:inline-block;
+}
+#logo {
+	float:left;
+	    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.byYseop {
+	color:#263D4F;
+	padding:0;
+	display:inline-block;
+	margin-top:30px;
+}
+
+.mdl-cell {
+	position: relative;
+}

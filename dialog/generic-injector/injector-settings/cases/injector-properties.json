@@ -1,0 +1,132 @@
+{
+"project":
+{
+	"title": "WS Bootstrap",
+	"modeDirect": true,
+	"hideXSLTransformationChoice":true,
+	"transformations": [ "html" ], 
+   	"defaultTransformation": "html",
+	"resultTarget": "area",
+    "usePictureForTitle": false,
+    "pictureFileName" : "clientLogo.png",
+    "cssOverride" : false,
+    "submitOnCaseChange" : true,
+    "submitOnSliderChange" : true,
+    "submitOnSelectChange" : false,
+    "includeLogsInDialogMode" : false,
+    "displayLaunchYseopButton" : true,
+    "displayRewriteMeButton" : true
+},
+"caseGroups" :
+[
+	{
+		"folded": false,
+		"cases":
+		[
+			{
+				"file": "bruceWayne.xml",
+				"label": "Bruce Wayne",
+				"defaultValue": true
+			},
+			{
+				"file": "juliaMauny.xml",
+				"label": "Julia Mauny"
+			},
+			{
+				"file": "nickFriend.xml",
+				"label": "Nick Friend"
+			}
+			
+		]
+	}
+],
+"languages" : ["fr", "en"],
+"displayLanguages": true, 
+"properties":
+[
+    {
+        "type": "radio",
+        "legend": "Radio buttons",
+        "id": "test",
+        "typeData": "enum",
+        "choices":
+        [
+            {
+                    "value": "radio1",
+                    "label": "radio 1",
+                    "defaultValue": true
+                   
+            },
+            {
+                    "value": "radio2",
+                    "label": "radio 2"
+            }
+        ],
+        "required":true
+    },
+    {
+        "type": "checkbox",
+        "legend": "Checkbox",
+        "label": "Show statistics",       
+        "id": "checkbox1",
+        "defaultValue": true
+    },
+ 
+    {
+        "type": "slider",
+        "legend": "Sliders",
+        "label": "Slider 1: ",
+        "id": "slider1",
+        "min": 0,
+        "max": 100,
+        "step":1
+    },
+	{
+        
+        "type": "spinner",
+        "label": "Spinner 1: ",
+        "id": "spinner1",
+
+        "min": 0,
+        "max": 100,
+        "step":1
+    },
+ 	{
+        
+        "type": "select",
+        "id": "ranking",
+        "label": "Ranking",
+        "legend": "Select fields",
+        "choices":
+        {
+            "prem":"first",
+            "sec":"second"
+        },
+        "required":true
+    },
+    {
+        
+        "type": "checkbox",
+        "legend": "Multivalued checkbox",
+        "id": "test2",
+        "typeData": "enum",
+        "choices":
+        [
+            {
+ 
+                    "label": "checkbox 1",
+                    "value": "chk1",
+                    "defaultValue": true
+                   
+            },
+            {
+                    "label": "checkbox 2",
+                    "value": "chk2"
+            }
+        ]
+    }
+]
+
+}
+
+

@@ -1,0 +1,10 @@
+/bin
+/log
+.generated-yml
+*~
+/xmlBatch/outputTest.xml
+/xmlBatch/result.html
+*.yma
+*.ini
+
+

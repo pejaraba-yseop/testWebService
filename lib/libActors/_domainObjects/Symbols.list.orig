@@ -1,0 +1,107 @@
+<<<<<<< HEAD
+Symbol LibActors:_PRONOUN;
+Symbol LibActors:_ANAPHORA;
+
+// ------------------------------
+
+Symbol LibActors:PRONOUN_USAGE;
+Symbol LibActors:NO_PRONOUN_USAGE;
+
+ConstList LibActors:pronounUsage
+{	LibActors:PRONOUN_USAGE,
+	LibActors:NO_PRONOUN_USAGE
+};
+
+// ------------------------------
+
+Symbol LibActors:NO_ARTICLE_USAGE;
+Symbol LibActors:WITH_OWNER;
+Symbol LibActors:NO_PRODUCT_TYPE;
+
+// ------------------------------
+Symbol LibActors:REDUCED_FIRST_NAME;
+Symbol LibActors:SALUTATION_FULL_NAME;
+Symbol LibActors:SALUTATION_LAST_NAME;
+Symbol LibActors:SALUTATION_FIRST_NAME;
+Symbol LibActors:SALUTATION_POLITE_DEAR;
+Symbol LibActors:SALUTATION_DEAR_FIRST_NAME;
+Symbol LibActors:SALUTATION_DEAR_CIVILITY;
+Symbol LibActors:FIRST_LAST_NAME;
+Symbol LibActors:SALUTATION_SHORT;
+Symbol LibActors:PERSONAL_PRONOUN;
+Symbol LibActors:THE_CLIENT;
+Symbol LibActors:THIS_CLIENT;
+Symbol LibActors:OUR_CLIENT;
+Symbol LibActors:THE_SALESPERSON;
+Symbol LibActors:THIS_PERSON;
+
+Symbol LibActors:THIS_PRODUCT_TYPE;
+Symbol LibActors:THIS_PRODUCT;
+Symbol LibActors:THE_PRODUCT_NAME;
+
+// ------------------------------
+Symbol LibActors:COMP_PERSONAL_PRONOUN;
+Symbol LibActors:COMP_NAME_ONLY;
+Symbol LibActors:COMP_COMPANY_AND_NAME;
+Symbol LibActors:COMP_COMPANY_ONLY;
+Symbol LibActors:COMP_THIS_COMPANY;
+Symbol LibActors:COMP_THIS_CORPORATION;
+Symbol LibActors:COMP_THIS_ESTABLISHMENT;
+
+// ------------------------------
+// utilisé en tant que clé
+Symbol LibActors:ANAPHORA_MODE;
+=======
+Symbol LibActors:_PRONOUN;
+Symbol LibActors:_ANAPHORA;
+
+// ------------------------------
+
+Symbol LibActors:PRONOUN_USAGE;
+Symbol LibActors:NO_PRONOUN_USAGE;
+
+ConstList LibActors:pronounUsage
+{	LibActors:PRONOUN_USAGE,
+	LibActors:NO_PRONOUN_USAGE
+};
+
+// ------------------------------
+
+Symbol LibActors:NO_ARTICLE_USAGE;
+Symbol LibActors:WITH_OWNER;
+Symbol LibActors:NO_PRODUCT_TYPE;
+
+// ------------------------------
+Symbol LibActors:REDUCED_FIRST_NAME;
+Symbol LibActors:SALUTATION_FULL_NAME;
+Symbol LibActors:SALUTATION_LAST_NAME;
+Symbol LibActors:SALUTATION_FIRST_NAME;
+Symbol LibActors:SALUTATION_POLITE_DEAR;
+Symbol LibActors:SALUTATION_DEAR_FIRST_NAME;
+Symbol LibActors:SALUTATION_DEAR_CIVILITY;
+Symbol LibActors:FIRST_LAST_NAME;
+Symbol LibActors:SALUTATION_SHORT;
+Symbol LibActors:PERSONAL_PRONOUN;
+Symbol LibActors:THE_CLIENT;
+Symbol LibActors:THIS_CLIENT;
+Symbol LibActors:OUR_CLIENT;
+Symbol LibActors:THE_SALESPERSON;
+Symbol LibActors:THIS_PERSON;
+
+Symbol LibActors:THIS_PRODUCT_TYPE;
+Symbol LibActors:THIS_PRODUCT;
+Symbol LibActors:THE_PRODUCT_NAME;
+
+// ------------------------------
+Symbol LibActors:COMP_PERSONAL_PRONOUN;
+Symbol LibActors:COMP_NAME_ONLY;
+Symbol LibActors:COMP_COMPANY_AND_NAME;
+Symbol LibActors:COMP_COMPANY_ONLY;
+Symbol LibActors:COMP_THIS_COMPANY;
+Symbol LibActors:COMP_THIS_CORPORATION;
+Symbol LibActors:COMP_THIS_ESTABLISHMENT;
+
+// ------------------------------
+// utilisé en tant que clé
+Symbol LibActors:ANAPHORA_MODE;
+>>>>>>> Use of bootstrapWebService in Yseop Suite

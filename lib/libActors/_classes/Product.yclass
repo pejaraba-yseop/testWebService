@@ -1,0 +1,286 @@
+interface LibActors:Product
+
+	field gender
+	--> domains NlgGender
+	--> dsl -> Textualization 
+                --> root "genre"
+                --> language LANG_fr
+                --> gender MASCULINE
+                --> number SINGULAR
+        ;
+		--> dsl -> Textualization 
+                --> root "género"
+                --> language LANG_es
+                --> gender MASCULINE
+                --> number SINGULAR
+        ;
+	--> dsl -> Textualization 
+                --> root "gender"
+                --> language LANG_en
+                --> number SINGULAR
+        ;
+        
+	field productLabel
+	--> domains Text
+	--> dsl -> Textualization 
+                --> root "libellé"
+                --> language LANG_fr
+                --> gender MASCULINE
+                --> number SINGULAR
+        ;
+		--> dsl -> Textualization 
+                --> root "etiqueta"
+                --> language LANG_es
+                --> gender FEMININE
+                --> number SINGULAR
+        ;
+	--> dsl -> Textualization 
+                --> root "product label"
+                --> language LANG_en
+                --> number SINGULAR
+        ;
+	
+	field productLabelToDisplay
+	--> domains Text
+    --> dsl -> Textualization 
+                --> root "libellé à afficher"
+                --> language LANG_fr
+                --> gender MASCULINE
+                --> number SINGULAR
+        ;
+		   --> dsl -> Textualization 
+                --> root "etiqueta para mostrar"
+                --> language LANG_es
+                --> gender FEMININE
+                --> number SINGULAR
+        ;
+	--> dsl -> Textualization 
+            	--> root "product label to display"
+            	--> language LANG_en
+            	--> number SINGULAR
+    ;
+	field productReference
+	--> domains String
+	--> dsl -> Textualization 
+                --> root "référence"
+                --> language LANG_fr
+                --> gender FEMININE
+                --> number SINGULAR
+        ; 
+		--> dsl -> Textualization 
+                --> root "referencia"
+                --> language LANG_es
+                --> gender FEMININE
+                --> number SINGULAR
+        ; 
+	--> dsl -> Textualization 
+                --> root "product reference"
+                --> language LANG_en
+                --> number SINGULAR
+        ;
+	field relatedProduct
+	--> domains LibActors:Product
+	--> dsl -> Textualization 
+                --> root "produit associé"
+                --> language LANG_fr
+                --> gender MASCULINE
+                --> number PLURAL
+        ;
+			--> dsl -> Textualization 
+                --> root "producto relacionado"
+                --> language LANG_es
+                --> gender MASCULINE
+                --> number SINGULAR
+        ;
+	--> dsl -> Textualization 
+                --> root "related product"
+                --> language LANG_en
+                --> number SINGULAR
+        ;	
+
+    method isCategory(LibActors:Product cat)
+	--> domains Boolean
+
+	// ----------- classProperties ----------
+
+	classProperties
+    --> dsl -> Textualization 
+			--> language	LANG_fr
+			--> root		"produit"
+			--> gender		MASCULINE
+			--> number		SINGULAR
+			;
+			 --> dsl -> Textualization 
+			--> language	LANG_es
+			--> root		"producto"
+			--> gender		MASCULINE
+			--> number		SINGULAR
+			;
+	--> dsl	-> Textualization 
+			--> language	LANG_en
+			--> root		"product"
+			--> number		SINGULAR
+			;
+
+    --> hasAccessorFunction true
+
+; // LibActors:Product
+
+implementation LibActors:Product
+	override {
+		getNativeGender function
+		toStringInStream function
+	}
+;
+
+function LibActors:Product::isCategory (LibActors:Product cat)
+--> action {
+	if (relatedProduct == null) {
+		return false;
+	} else {
+		if (relatedProduct == cat)
+			return true;
+		else
+			return relatedProduct.isCategory (cat);
+	}
+}
+;
+
+function LibActors:Product::toStringInStream(
+			{	LibActors:THIS_PRODUCT_TYPE,
+				LibActors:THIS_PRODUCT,
+				LibActors:THE_PRODUCT_NAME,
+				_OWNER: LibActors:Person owner,
+				_DETERMINER:		 NlgDeterminer || DeterminerSynonym determiner, 
+			} args)
+			
+--> local Object products
+
+static {
+	
+	function eachProductHasRelatedProduct(Collection prods)
+	--> domains Boolean
+	--> action {
+		foreach(_op,prods){
+			if(_op.relatedProduct == null){
+				return false;
+			}
+		}
+		return true;
+	}
+	;
+	
+	TextFunction writeLabel()
+	--> action {
+		\( 
+			\if(products.isInstanceOf(Collection) == true)
+				\libActors:_texts:scanList(products)
+			\else
+				\if(productLabelToDisplay!= null && productLabelToDisplay.isStringEmpty() == false)
+					\value(productLabelToDisplay)
+				\else
+					\value(productLabel)
+				\endIf
+			\endIf
+		\).write();
+	}	 
+	;
+	
+	NlgNounPhrase THE_PRODUCT_NAME
+      --> components     DEFINITE_ARTICLE
+      --> head           -> NlgSubstantive
+      						--> gender getGender()
+	  						--> root writeLabel
+						;
+	;
+
+	@remark à voir avec Alain
+	NlgSubstantive relatedProductLabel
+	--> gender relatedProduct.getGender()
+	--> root ifExpr(relatedProduct.productLabelToDisplay != null)
+			then
+				relatedProduct.productLabelToDisplay
+			else
+				relatedProduct.productLabel
+	;
+	
+	TextFunction thisProductType()
+	--> text 	\( 
+					@if (engine_version_compatible ("5.4.0.BETA01") == true)
+						\value(relatedProductLabel, _DETERMINER: DEMONSTRATIVE_DETERMINER, _THIRD: relatedProduct)
+					@else
+						\thirdWithDeterminer (relatedProduct, DEMONSTRATIVE_DETERMINER)
+					@endif
+				\)
+	;
+	
+	NlgNounPhrase THIS_PRODUCT
+      --> components     DEMONSTRATIVE_DETERMINER
+      --> head           -> NlgSubstantive
+      						--> gender MASCULINE
+      						--> number 	ifExpr (this.isInstanceOf(Collection) == true)
+										then
+											PLURAL
+										else
+											SINGULAR
+      						--> root	switchExpr (TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+      										case (LANG_en) : "product"
+											case (LANG_fr) : "produit"
+											default : "TO_TEXTUALIZE_PRODUCT"
+											}
+    										      		
+						;
+	;
+} //static
+--> action {
+	products = this;
+	
+	
+	
+			
+						
+						
+	\( 	
+	\if (owner != null)
+		
+		\value ( writeLabel().toString(), _DETERMINER: determiner, _OWNER: owner	)
+				
+	\else
+						
+		\switch
+
+			\case(args[LibActors:THE_PRODUCT_NAME] == true)
+				\value(THE_PRODUCT_NAME)  // pas forcement utile si usage de \value(product, _DETERMINER: _DEFINITE_ARTICLE)
+						
+			\case(args[LibActors:THIS_PRODUCT] == true)
+				\value(THIS_PRODUCT) // pas forcement utile si usage de \value(product, _DETERMINER: _DEMONSTRATIVE)
+				
+			\case(args[LibActors:THIS_PRODUCT_TYPE] == true)
+				\if(this.isInstanceOf(Collection) == true)
+					\if( eachProductHasRelatedProduct(myObject(this)) == true)
+						\libActors:_texts:scanList(myObject(this), LibActors:THIS_PRODUCT_TYPE)
+					\endIf
+				\else
+					\if ( relatedProduct != null)
+						\thisProductType
+					\endIf
+				\endIf
+							
+			\default
+				// \writeLabel()
+				\value (	writeLabel().toString(),
+							_DETERMINER: determiner
+						)
+		\endSwitch
+	\endIf
+	\).write (args);
+} 
+;
+
+function LibActors:Product::getNativeGender()
+--> return	ifExpr (gender != null)
+ 			then
+ 				gender
+			else
+				null
+;

@@ -1,0 +1,21 @@
+interface GeneralData
+    field language
+        --> domains Language
+        --> dsl -> Textualization
+            --> language LANG_fr
+            --> root "langage"
+            --> number SINGULAR
+        ;
+		
+    classProperties
+    --> dsl -> Textualization
+        --> language LANG_en
+        --> root "general data"
+        --> number PLURAL
+    ;
+    --> hasAccessorFunction true
+;
+
+implementation GeneralData
+	--> hasAccessorFunction true
+;

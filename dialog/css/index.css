@@ -1,0 +1,325 @@
+/*-------- body area --------*/
+	body > div {
+		margin-left: auto;
+		margin-right: auto;
+		border-color: #F0F0F0;
+		border-radius: 8px;
+		background-color: #FFFFFF;
+		border: solid darkgray 1px;
+	}
+
+	body {
+		font-family:"Trebuchet MS", arial,sans-serif;
+		background-image: url('../images/bodyBackground.jpg');
+		/* recommended size for background-image: 1920x1080 px */
+		margin-top : -20px;
+		background-attachment: fixed;
+		background-position: center;
+		background-position-y: 0px;
+	}
+
+/*-------- body area --------*/
+
+/*-------- header/footer area --------*/
+	div.headerArea {
+		width: 100%;
+		min-height: 100px;
+		display: table;
+	}
+	/*------ client/Yseop logos ------*/
+		#yseopLogo {
+			float: right;
+		}
+		#clientLogo {
+			max-width: 435px;
+			max-height: 150px;
+		}
+		#yseopLogo {
+			float: right;
+		}
+		img#loading {
+			float: right;
+			display: none;
+		}
+		img#loadingLogo {
+			float: right;
+			display: none;
+			margin-right: -104px;
+		}
+		div.logoArea {
+			text-align: center;
+			padding: 10px;
+			display: table-cell;
+			vertical-align: top;
+		}
+	/*------ client/Yseop logos ------*/
+
+	/*------ buttons/pointer arrow ------*/
+	input[type="checkbox"] {
+		margin-right:5px;
+	}
+	div.buttonArea {
+		width: 25%;
+		min-width: 225px;
+		display: table-cell;
+		vertical-align: top;
+		position: relative;
+	}
+	.btn {
+		background-color: #027cb9;
+		color: #FFFFFF;
+		border: solid;
+		border-width: 2px;
+	}
+	.btn:hover {
+		background-color: #FFFFFF;
+		color: #027cb9;
+		border-color: #027cb9;
+		border-style: solid;
+		border-width: 2px;
+	}
+	.btn:focus {
+		background-color: #FFFFFF;
+		color: #027cb9;
+		border-color: #027cb9;
+		border-style: solid;
+		border-width: 2px;
+	}
+	.caseBtn, .theCases {
+		height: 2.5em;
+		font-size: 1.2em;
+		margin: 5px;
+		width: 225px;
+		margin: 5px auto 5px auto;
+		display: block;
+	}
+	.theCases {
+		position: relative;
+	}
+	#refreshButton {
+		text-align: right;	
+		margin-bottom : 10px;
+		margin-top: -88px;
+
+	}
+	#caseRefresh{
+		float: right;
+		height: 1.5em;
+	}
+	div.arrow {
+		text-align: center;
+		position: relative;
+		color: #003265;
+		text-align: center;
+		font-weight: bold;
+		color: #003265;
+		text-align: center;
+		font-size: 22px;
+	}
+	img.arrow {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: 30%;
+		width: 30%;
+		
+	}
+	span.casesContainer {
+		background-color: white;
+		padding: 10px 15px 10px 15px;
+		border: solid #027cb9 2px;
+		border-radius: 15px;
+		z-index: 20;
+		position: absolute;
+		display: none;
+		top: -12px;
+		left: -8px;
+	}
+	span.configSettings {
+/*		background-color: white;
+		border: solid black 1px;
+		border-radius: 15px;
+		display: none;*/
+		padding: 10px 15px 10px 15px;
+		position: absolute;
+		z-index: 10;
+		top: 50px;
+		left: -6px;
+	}
+	input.showAdvice {
+		-ms-transform: scale(1.25); /* IE */
+		-moz-transform: scale(1.25); /* FF */
+		-webkit-transform: scale(1.25); /* Safari and Chrome */
+		-o-transform: scale(1.25); /* Opera */
+	}
+	div.hidden {
+		display: none;
+	}
+	/*------ buttons/pointer arrow ------*/
+/*-------- header area --------*/
+
+/*------ button/sliders/report areas ------*/
+	div#content{
+		margin-right:auto;
+		margin-left:auto;
+		padding:15px;
+		width:95%;
+		max-width:1000px;
+		min-width:888px;
+		margin-top:100px;
+		margin-bottom:100px;
+		display: table;
+	}
+	.contentArea {
+		margin: 10px;
+		font-size: 12pt;
+		display: table;
+		width: 100%;
+		margin: -50px auto 50px auto;
+	}
+	/*------ sliders ------*/
+		div.sliderArea{
+			width: 25%;
+			padding: 0px 5px 0px 5px;
+			display: table-cell;
+			vertical-align: top;
+		}
+		div.theSliders {
+			padding-top: 65px;
+		}
+		.sliderWidget{
+		  padding-left: 15px;
+		  padding-right: 15px;
+		  padding-bottom: 2px; 
+		  padding-top: 2px;
+
+		}
+		.slider{
+		  width: 100% !important;
+		}
+		.input{
+		  border: none;
+		  background-color: white !important;
+		}
+		.sliderValue {
+			display: none;
+		}
+		input.inputZone {
+			border: none;
+			min-width: 65px;
+		}
+
+		div.sliderZone {
+			margin-top: 5px;
+		}
+
+		div.sliderWidget {
+			margin-bottom: 10px;
+			padding-bottom: 5px;
+		}
+		.sliderLabel {
+			font-size: 0.9em;
+		}
+		input.input {
+			font-size: 0.9em;
+		}
+		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+		  background: #027cb9;
+		  border: 2px solid #027cb9;
+		  z-index: 1;
+		}
+		.ui-widget-content {
+			border: 1px solid #027cb9;
+			background: rgba(2,124,185, 0.05);
+		}
+	/*------ sliders ------*/
+	/*------ the report ------*/
+		div.regenBtn {
+			height: 50px;
+			text-align: right;
+			position: relative;
+			top: 15px;
+		}
+		button.regen {
+			padding: 10px!important;
+		}
+		div.reportArea {
+			display: table-cell;
+			vertical-align: top;
+			padding: 15px;
+		}
+		div.theReport {
+			
+			padding: 65px;
+			max-width: 850px;
+			margin: 25px auto 25px auto;
+			/*Border */
+			background: #ffffff;
+		    border: 2px solid #bbbbbb;
+
+			/* Shadow */
+			-webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.56);
+			-moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.56);
+			box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.56);
+		}
+	/*------ the report ------*/
+/*------ button/sliders/report areas ------*/
+
+
+
+/*------ text color/highlights/styles ------*/
+	span.highlight.syn, span.highlight {
+		background: yellow;
+	}
+	span.highlight.val, span.highlight.val .syn {
+		background: orange;
+	}
+	.coloredRed {
+		color: red;
+	}
+	.coloredGreen {
+		color:#00B600;
+	}
+	h3.styleTitle {
+		font-size: 14pt;
+		font-weight: bold;
+	}
+	tr.checkboxes {
+		display: none;
+	}
+	span.checkbox {
+		font-weight: bold;
+		font-size: 1.2em;
+		cursor: pointer;
+		padding-left: 0px!important
+	}
+	span.recommendation {
+		font-weight: bold;
+		color: darkblue;
+	}
+	span.theAdvice {
+		display: none;
+	}
+	label.configSettings {
+		font-weight: bold;
+		font-size: 1.2em;
+		cursor: pointer;
+		width: 225px;
+		margin: 0px auto 0px auto;
+		padding-left: 5px;
+		display: table;
+	}
+/*------ text color/highlights/styles ------*/
+
+
+
+/*------ table area ------*/
+	td.TD_left{
+		text-align: left;
+	}
+	td.TD_center{
+		text-align: center;
+	}
+	td.TD_right{
+		text-align: right;
+	}
+

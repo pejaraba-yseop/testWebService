@@ -1,0 +1,410 @@
+#header {
+	padding:10pt 0 10pt 2%;
+	width:98%;
+	margin-top:0;
+	height:65px;
+	background-size:cover;
+}
+
+#header h2 {
+	font-weight:normal;
+	font-size:24pt;
+	margin-left: 290px;
+	margin-top:30pt;
+	color:whitesmoke;
+}
+
+#tabs {
+	background:none;
+}
+
+#tabs {
+	position:absolute;
+	top: 0;
+	bottom:0;
+	width:95%;
+}
+#properties {
+height:100%;
+background:#333333;
+color:#FFFFFF;
+position:absolute;
+	top:108pt;
+	left:-2pt;
+	width:280px;
+	padding-top:50pt;
+}
+
+#properties h2 {
+	display: none;
+}
+#properties ul {
+	background:none;
+	border:none;
+	margin-top:0px;
+	overflow:hidden;
+	padding-top:0px;
+}
+
+#cases h4 {
+	margin-top: 0;
+}
+
+
+
+#propertiesItem {
+	color:#FFFFFF;
+	height:400px;
+}	
+
+#properties h4 a{
+	color:whitesmoke;
+	text-decoration: none;
+	font-weight: normal;
+	font-size:13pt;
+}	
+
+#properties label {
+	color:whitesmoke;
+}
+
+#properties .casesContainer ul {
+	margin-left:0;
+}
+#logoContainer {
+	position:absolute;
+	top:110pt;
+	width:280px;
+	height:70px;
+
+	color:whitesmoke;
+}
+
+
+.byYseop {
+	padding-top:10pt;
+	padding-left:10pt;
+	font-size:11pt;
+
+}
+#logo {
+	background:url(../images/logo_white.png);
+	background-repeat:no-repeat;
+	width:50px;
+	height:45px;
+	margin-top:10pt;
+	float:left;
+	margin-left:10pt;
+	margin-right:15pt;
+}
+
+#propertiesButtons {
+	//padding:20pt 0 0 0;
+	margin-top: -40px;
+    background: #7d7d7d;
+	text-align: center;
+}
+
+#buildAndLaunch {
+	background: #1DE9B6;
+	border: none;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#buildXML {
+	border: none;
+	padding:6pt;
+	color:whitesmoke;
+	background: rgba(150,150,150,0.4);
+}
+#buildXML:hover {
+	background: rgba(150,150,150,0.5);
+}
+
+#buildAndLaunch:hover {
+	background: #1DE9B6;
+	color:#ffffff;
+	
+}
+
+#buildAndLaunch span {
+	display: none;
+}
+
+
+#titleResult {
+	background:rgb(51,161,255);
+	color:#ffffff;
+	border:none;
+	padding:6pt 0 6pt 10pt;
+	font-size:12pt;
+}
+
+#resultContent {
+	border:none;
+	
+	padding-top:20pt;
+	padding-bottom: 20pt;
+	background:#FFFFFF;
+}
+
+.button {
+	border-radius:8pt;
+	border:none;
+	background-color:rgba(51,165,255,0.6);
+	color:whitesmoke;
+	cursor: pointer;
+	display:inline-block;
+	outline:none;
+	//padding:8pt;
+	margin-bottom:10pt;
+}
+
+.selected {
+	background-color:rgb(51,165,255);
+}
+.button:hover {
+		background-color:rgb(51,165,255);
+
+}
+
+#cases{
+	margin-bottom:10pt;
+}
+#cases ul li {
+	display:inline-block;	
+}
+
+#transformations label,
+.radio label, .checkbox label {
+    font-family:Raleway;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 15px;
+	margin-top:3pt;
+    font-size: 11pt;
+    color: white;
+}
+
+input[type=radio],input[type=checkbox] {
+    display: none;
+}
+
+#transformations  label:before,
+.radio label:before,
+.checkbox label:before  {
+    content: "";
+    display: inline-block;
+ 
+    width: 22px;
+    height: 22px;
+ 
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #ffffff;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+#transformations  label:before,
+.radio label:before {
+    border-radius: 12px;
+}
+
+.checkbox label:before {
+    border-radius: 4px;
+}
+#transformations  input[type=radio]:checked + label:before,
+input[type=radio]:checked + label:before
+ {
+    content: "\2022";
+    color: #3285C6;
+    font-size: 60px;
+	font-weight:bold;
+    text-align: center;
+    line-height: 23px;
+}
+
+
+input[type=checkbox]:checked + label:before
+ {
+    content: "\2713";
+    color: #3285C6;
+    font-size: 20px;
+    text-align: center;
+    line-height: 15px;
+    border-right: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	transform: initial;
+	width: 20px;
+	left: 1px;
+    padding-top: 3px;
+}
+
+#listeFieldSetDemande {
+	max-height:570px;
+	overflow:hidden;
+	padding-top:10px;
+	padding-bottom:5pt;
+	background:#3B3B3B;
+	width:280px;
+	padding-left:10px;
+	
+}
+
+#listeFieldSetDemande .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid #77d5f7;
+  background: rgb(51,165,255);
+  outline:none;
+  border:none;
+  font-weight: normal;
+  color: #ffffff;
+
+}
+
+.ui-slider .ui-slider-handle {
+	  border-radius:8pt;
+	  cursor:pointer;
+}
+.ui-slider {
+	height:6pt;
+	margin-top:10pt;
+	margin-left:10pt;
+	width:180px;
+}
+
+
+.sliderValue {
+	background:none;
+	margin-left:5pt;
+	color: #f0cc40;
+	border:none;
+	width:30px;
+}
+
+#properties .checkbox ul {
+	overflow:visible;
+}
+
+#properties .text .ui-spinner-button {
+	background:none;
+	cursor:pointer;
+}
+
+#properties .text .ui-spinner-input {
+	outline:none;
+	border:none;
+	width:80px;
+}
+
+
+
+#languages {
+	top:108pt;
+	right:20pt;
+}
+
+#languages .mdl-color-text--blue-500{
+	color: white !important;
+}
+
+#languages .button {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 5pt;
+	border-bottom-left-radius: 5pt;
+	margin-right:2pt;
+	text-transform:uppercase;
+	background:rgba(0,0,0,0.6);
+	box-shadow:0px 2px 2px #333333 inset;
+}
+#languages .mdl-button {
+	background: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    color: white;
+    margin-right: 3px;
+}
+#languages .mdl-button:hover, #languages .selected {
+    background: #FFFFFF !important;
+    color: #3285C6 !important;
+}
+
+.situation h5  i {
+	text-align:right;
+	margin-right:20pt;
+	float:right;
+}
+
+.situation h5 {
+	color:whitesmoke;
+	font-size:11pt;
+	font-weight:500;
+	cursor:pointer;
+	width:260px;
+}
+
+.ps-scrollbar-y {
+	cursor:pointer;
+}
+
+select {
+	border-radius:4pt;
+	outline:none;
+	border:none;
+	padding:2pt;
+	color:#333333;
+	margin:2pt 5pt;
+}
+
+#xmlLink {
+  position: absolute;
+  z-index: 10000;
+  left: 335px;
+  height: 20pt;
+  top: 100pt;
+  background: #5D5D5D;
+  padding: 7pt 15pt 4pt 15pt;
+  box-shadow: 0px 2px 2px #333333 inset;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 5pt;
+  border-bottom-left-radius: 5pt;  
+}
+
+#xmlLink a {
+	color:rgb(51,161,255);
+	font-size:11pt;
+	
+}
+
+#tab1 {
+	position: relative;
+	min-height:95%;
+	padding-bottom:5%;
+}
+#listeFieldSetDemande input[type='text'], input[id^='spinner'] {
+    margin: 20px 0 20px 0;
+    color: white;
+    border-bottom-color: white;
+}
+input[id^='spinner']{
+    height: 2rem;
+    margin-top: 25px;
+}
+input[id^='spinner']:hover{
+	background: white;
+    color: #2196f3;
+    border-radius: 5px;
+}
+span.caret {
+	color: white !important;
+}
+[type="radio"]:not(:checked) + label:after , [type="radio"]:checked + label:after {
+	margin: 7px 0 0 7px;
+}

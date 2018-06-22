@@ -1,0 +1,14 @@
+@assertEngineVersionCompatible ("6.0.0.RC16")
+
+@defineLibrary ("fw-libActors", "1.0.0.RC02")
+
+/*
+RC02 : 
+- LibActors:Company class added with 3 referentials and 4 anaphora
+- minor corrections in textualizations of product
+- add DEAR salutations in referential of LibActors:Person
+compatibility :
+-  YBS 4.0.0.Q2
+- Engine 6.0.0.RC16
+Release date : July 2nd, 2016
+*/

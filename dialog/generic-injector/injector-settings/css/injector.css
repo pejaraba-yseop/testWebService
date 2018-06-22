@@ -1,0 +1,102 @@
+#propertiesItems{
+	padding: 0 10px 0 10px;
+}
+
+#listeFieldSetDemande{
+	width: 90%;
+}
+#listeFieldSetDemande div{
+	margin-bottom: 40px;
+}
+.casesContainer li,
+#propertiesButtons a{
+	margin-bottom: 10px;
+}
+
+.mdl-button {
+	background: #EEEEEE;
+	color: #616161;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button  {
+	background: none;
+	color:#9E9E9E;
+	outline: none;
+}
+
+.mdl-button:hover {
+	color: #616161;
+}
+
+.mdl-button.selected {
+	background: #2196F3;
+	color:#FFFFFF;
+}
+
+.mdl-button.selected:focus:not(:active) {
+    background: #2196F3;
+}
+
+.ui-slider {
+	height:5px;
+	color:#
+}
+
+.range-value {
+	position: absolute;
+    right: 13px;
+    margin-top: -10px;
+	border-radius: 25px;
+	color: white;
+	background: #2196F3;
+	text-align:center;
+	padding-top:1px;
+	font-size:12px;
+	width:25px;
+	height: 25px;
+}
+
+#logoContainer {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 100;
+	font-family: 'Roboto';
+	display: inline-flex;
+}
+
+#logo {
+	background: url('../images/logo_white.png');
+	height:36px;
+	width:40px;
+}
+
+.byYseop  {
+	padding-top:5px;
+	padding-left: 10px;
+}
+
+
+#loading
+{
+position : fixed;
+z-index: 9999;
+background: rgba(255,255,255,0.9);
+top : 0px;
+left : 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+padding-top:15%;
+text-align:center;
+display:none;
+}
+
+
+
+@media (max-width: 500px)
+{
+	.byYseop {
+		display: none;
+	}
+}

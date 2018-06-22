@@ -1,0 +1,263 @@
+
+
+// ----------------------------------------------------------------------------------------------
+// ------------------------------   LibActors:Company			  -------------------------------
+// ----------------------------------------------------------------------------------------------
+
+interface LibActors:Company
+
+	field name
+	--> domains Text
+	--> xmlMapping XmlMappingProperty_SAVE
+	--> dsl	-> Textualization 
+                --> root "raison sociale"
+                --> language LANG_fr
+                --> gender FEMININE
+                --> number SINGULAR
+        	;
+			--> dsl	-> Textualization 
+                --> root "razón social"
+                --> language LANG_es
+                --> gender FEMININE
+                --> number SINGULAR
+        	;
+    --> dsl -> Textualization 
+                --> root "name"
+                --> language LANG_en
+                --> number SINGULAR
+        ;
+        
+    classProperties
+    --> dsl -> Textualization
+        --> language LANG_fr
+        --> root "entreprise"
+        --> number SINGULAR
+        --> gender FEMININE
+    ;
+	  --> dsl -> Textualization
+        --> language LANG_es
+        --> root "empresa"
+        --> number SINGULAR
+        --> gender FEMININE
+    ;
+    --> dsl -> Textualization
+        --> language LANG_en
+        --> root "company"
+        --> number SINGULAR
+    ;
+    
+; // LibActors:Company
+
+implementation LibActors:Company
+	override {
+		toStringInStream function
+	}
+	--> trackInstances true
+;
+
+
+
+ConstList LibActors:anaphoraCompUsage
+{	
+	LibActors:COMP_PERSONAL_PRONOUN,
+	LibActors:COMP_THIS_COMPANY,
+	LibActors:COMP_THIS_CORPORATION,
+	LibActors:COMP_THIS_ESTABLISHMENT
+};
+
+// ----------------------------------------------------------------------------------------------
+// ------------------------------   toStringInStream   ------------------------------------------
+// ----------------------------------------------------------------------------------------------
+
+function LibActors:Company::toStringInStream({	[_CASE]: NlgCase case {__nullable},
+												[LibActors:_ANAPHORA]: LibActors:pronounUsage || LibActors:anaphoraType anaphoraCompUsage,} args)
+--> local
+		Text 						companyExpression,
+		Text						referentialExpression,
+		List						anaphorList,
+		Object						aCompany,
+		Boolean						forbiddenPronoun
+
+static { 
+        
+    // --------------------------------------------------------------------
+	// -----------------   LibActors:writeCompAnaphorType  --------------------
+	// --------------------------------------------------------------------
+
+	TextFunction LibActors:writeCompAnaphorType ({[LibActors:ANAPHORA_MODE]: LibActors:anaphoraType mode} args)
+	--> text
+		\( 	
+			\switch(mode)
+
+			// -----------------  COMP_PERSONAL_PRONOUN
+
+			\case(LibActors:COMP_PERSONAL_PRONOUN)
+					\pronoun(_PERSONAL, _THIRD: aCompany)
+
+			// -----------------  COMP_THIS_COMPANY
+
+			\case(LibActors:COMP_THIS_COMPANY)
+							 \value(switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+												case (LANG_en) : "company"
+												case (LANG_fr) : "entreprise"
+												case (LANG_es) : "empresa"
+												default : "company"
+												}, 
+		                              switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+		                                        case (LANG_en) : INANIMATE 
+		                                        case (LANG_fr) : FEMININE
+												case (LANG_es) : FEMININE
+		                                        default : INANIMATE
+		                                     }, 
+		                                    _DETERMINER: _DEMONSTRATIVE,
+		                                    _THIRD: aCompany,
+		                                    _THROW_TEXT_GRANULE_AGREEMENT)
+
+			// -----------------  COMP_THIS_CORPORATION_SOCIETE
+
+			\case(LibActors:COMP_THIS_CORPORATION)
+							\value(switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+												case (LANG_en) : "corporation"
+												case (LANG_fr) : "société"
+												case (LANG_fr) : "sociedad"
+												default : "corporation"
+												}, 
+												
+		                              switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+		                                        case (LANG_en) : INANIMATE 
+		                                        case (LANG_fr) : FEMININE
+												case (LANG_es) : FEMININE
+		                                        default : INANIMATE
+		                                     }, 
+		                                    _DETERMINER: _DEMONSTRATIVE,
+		                                    _THIRD: aCompany,
+		                                    _THROW_TEXT_GRANULE_AGREEMENT)
+		                    
+
+			// -----------------  COMP_THIS_ESTABLISHMENT_ETABLISSEMENT
+
+			\case(LibActors:COMP_THIS_ESTABLISHMENT)
+							\value(switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+												case (LANG_en) : "establishment"
+												case (LANG_fr) : "établissement"
+												case (LANG_es) : "establecimiento"
+												default : "establishment"
+												}, 
+		                              switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+		                                        case (LANG_en) : INANIMATE 
+		                                        case (LANG_fr) : MASCULINE
+												case (LANG_es) : MASCULINE
+		                                        default : INANIMATE
+		                                     }, 
+		                                    _DETERMINER: _DEMONSTRATIVE,
+		                                    _THIRD: aCompany,
+		                                    _THROW_TEXT_GRANULE_AGREEMENT)
+		                     
+
+			\endSwitch
+		\)
+	; // LibActors:writeCompAnaphorType
+        
+	// --------------------------------------------------------------------
+	// -----------------   LibActors:writeCompAnaphor  --------------------
+	// --------------------------------------------------------------------
+					
+	TextFunction LibActors:writeCompAnaphor ({[LibActors:ANAPHORA_MODE]: LibActors:anaphoraType mode} args)
+	--> text
+		\( 	
+			\if (mode != LibActors:COMP_PERSONAL_PRONOUN)
+				\setReferenceNumberOf(aCompany, null)
+			\endIf
+			
+			\LibActors:writeCompAnaphorType(mode)
+			
+			\setReferenceKeyVal(LibActors:ANAPHORA_MODE, mode)
+		\)
+	; // LibActors:writeCompAnaphor
+        
+ 	// --------------------------------------------------------------------
+	// -----------------   REPRESENTANT_COMPANY    ------------------------
+	// --------------------------------------------------------------------
+        
+    NlgRepresentant REPRESENTANT_COMPANY
+        --> referential referentialExpression
+        --> anaphor  anaphorList	        			
+    ;
+}
+   
+    --> action {
+    
+    	aCompany = evaluate(this);
+    	companyExpression = \( \value(switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+										case (LANG_en) : "company"
+										case (LANG_fr) : "entreprise"
+										case (LANG_es) : "empresa"
+										default : "company"
+										},
+										switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+                                        case (LANG_en) : INANIMATE
+                                        case (LANG_fr) : FEMININE
+										case (LANG_es) : FEMININE
+                                        default : INANIMATE
+                                        },
+                                        _DETERMINER: DEFINITE_ARTICLE,
+                                        _THIRD: aCompany,
+                                        _THROW_TEXT_GRANULE_AGREEMENT) \);
+        referentialExpression = \( 
+		       						\beginSynonym
+										\choice
+											\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:COMP_NAME_ONLY) == true)
+												/* \beginQuote        
+				                                	\value(aCompany.name)
+				                                \endQuote */
+											\endIf
+										
+										\choice
+											\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:COMP_COMPANY_AND_NAME) == true)
+												\value(companyExpression)
+												/* \beginQuote        
+				                                	\value(aCompany.name)
+				                                \endQuote */
+											\endIf
+				
+										\choice
+											\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:COMP_COMPANY_ONLY) == true)
+												\value(companyExpression)
+											\endIf
+									\endSynonym
+		                        \);            
+        if (anaphoraCompUsage == LibActors:PRONOUN_USAGE)
+			anaphoraCompUsage = LibActors:COMP_PERSONAL_PRONOUN;
+		else
+			if (anaphoraCompUsage == LibActors:NO_PRONOUN_USAGE)
+			{
+				forbiddenPronoun = true;
+				anaphoraCompUsage = null;
+			}
+        if (	anaphoraCompUsage != null
+			&&	LIBACTORS_CONFIG.anaphoraType.contains(anaphoraCompUsage) != true
+		)
+			anaphoraCompUsage = null;
+		if(anaphorList == null)
+			anaphorList = new(List);
+
+		if(anaphoraCompUsage != null)
+			anaphorList.add(LibActors:writeCompAnaphor(anaphoraCompUsage));
+		else {
+				if(LIBACTORS_CONFIG.anaphoraType.contains(LibActors:COMP_PERSONAL_PRONOUN) == true && forbiddenPronoun != true)
+					anaphorList.add(LibActors:writeCompAnaphor(LibActors:COMP_PERSONAL_PRONOUN));
+				if(LIBACTORS_CONFIG.anaphoraType.contains(LibActors:COMP_THIS_COMPANY) == true)	
+					anaphorList.add(LibActors:writeCompAnaphor(LibActors:COMP_THIS_COMPANY));
+				if(LIBACTORS_CONFIG.anaphoraType.contains(LibActors:COMP_THIS_CORPORATION) == true)	
+					anaphorList.add(LibActors:writeCompAnaphor(LibActors:COMP_THIS_CORPORATION));
+				if(LIBACTORS_CONFIG.anaphoraType.contains(LibActors:COMP_THIS_ESTABLISHMENT) == true)	
+					anaphorList.add(LibActors:writeCompAnaphor(LibActors:COMP_THIS_ESTABLISHMENT));
+			}
+		if(anaphorList.isEmpty() == true)
+			anaphorList.add(referentialExpression);
+        REPRESENTANT_COMPANY.write(_REFERENT, this, args);
+        if(anaphorList != null)
+			free(anaphorList);
+    }
+ 
+;			

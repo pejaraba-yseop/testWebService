@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yseop-yml:ymlTextFunction xmlns:yseop-yml="http://www.yseop.com/yml/storage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" domainModelVersion="3" identifier="eb83ba3c-3ae4-4a03-813b-5bd383865c8c">
+    <yseop-yml:textGranule domainModelVersion="3" identifier="673c3d63-b6cd-4a8c-b7f8-d1fed4f1af58">
+        <yseop-yml:granuleI18nContents>
+            <yseop-yml:granuleUnilingueContent locale="fr">
+                <yseop-yml:granuleContent>
+                    <yseop-yml:text>\foreach(_hc,holdersCategory,#assembly#)
+	\foreach(op, ownedProducts,#assembly#)
+		\if(_hc.equals(LibActors:OwnedProduct(op)>>holders) == true)
+			\value(op, args)			
+		\endIf
+		\resetReferences
+	\endForeach
+	de
+	\value(_hc)		
+	// à modifier plustard en le gérant avec \value()
+\endForeach
+</yseop-yml:text>
+                    <yseop-yml:inline-assemblies>
+                        <yseop-yml:singleSentenceLinkAssembly name="assembly" language="fr">
+                            <yseop-yml:chooseSeparatorOptions>
+                                <yseop-yml:beforeEachItemCommaSelected>true</yseop-yml:beforeEachItemCommaSelected>
+                                <yseop-yml:beforeEachItemOtherText/>
+                                <yseop-yml:beforeLastItemAndSelected>true</yseop-yml:beforeLastItemAndSelected>
+                                <yseop-yml:beforeLastItemOtherText/>
+                                <yseop-yml:maxCountOfItemsForEachSentenceValue>3</yseop-yml:maxCountOfItemsForEachSentenceValue>
+                                <yseop-yml:endOfSentenceDotSelected>true</yseop-yml:endOfSentenceDotSelected>
+                                <yseop-yml:endOfSentenceQuestionMarkSelected>false</yseop-yml:endOfSentenceQuestionMarkSelected>
+                                <yseop-yml:endOfSentenceOtherSelected>false</yseop-yml:endOfSentenceOtherSelected>
+                                <yseop-yml:switchThresholdValue>4</yseop-yml:switchThresholdValue>
+                            </yseop-yml:chooseSeparatorOptions>
+                            <yseop-yml:beginEndWithOptions>
+                                <yseop-yml:generalBeginWithText/>
+                                <yseop-yml:generalEndWithText/>
+                                <yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemBeginWithSpecificText/>
+                                <yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemEndWithSpecificText/>
+                                <yseop-yml:noItemGenerateNothingSelected>true</yseop-yml:noItemGenerateNothingSelected>
+                                <yseop-yml:noItemSentenceText/>
+                                <yseop-yml:inGeneralBulletBeginSameAsListSelected>true</yseop-yml:inGeneralBulletBeginSameAsListSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificSelected>false</yseop-yml:inGeneralBulletBeginSpecificSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificText/>
+                                <yseop-yml:inGeneralBulletEndSameAsListSelected>true</yseop-yml:inGeneralBulletEndSameAsListSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificSelected>false</yseop-yml:inGeneralBulletEndSpecificSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificText/>
+                            </yseop-yml:beginEndWithOptions>
+                            <yseop-yml:limitSizeOptions>
+                                <yseop-yml:noLimitSelected>true</yseop-yml:noLimitSelected>
+                                <yseop-yml:onlyFirstElementsNumberValue>3</yseop-yml:onlyFirstElementsNumberValue>
+                                <yseop-yml:sentenceSizeTypeValue>30</yseop-yml:sentenceSizeTypeValue>
+                                <yseop-yml:limitByTypeValue>words</yseop-yml:limitByTypeValue>
+                                <yseop-yml:sentenceEndEtcSelected>true</yseop-yml:sentenceEndEtcSelected>
+                                <yseop-yml:sentenceEndOtherText/>
+                            </yseop-yml:limitSizeOptions>
+                        </yseop-yml:singleSentenceLinkAssembly>
+                    </yseop-yml:inline-assemblies>
+                    <yseop-yml:inline-dslFunctionCalls/>
+                </yseop-yml:granuleContent>
+            </yseop-yml:granuleUnilingueContent>
+            <yseop-yml:granuleUnilingueContent locale="en">
+                <yseop-yml:granuleContent>
+                    <yseop-yml:text>\foreach(_hc,holdersCategory,#assembly#)
+	\foreach(op, ownedProducts,#assembly#)
+		\if(_hc.equals(LibActors:OwnedProduct(op)>>holders) == true)
+			\value(op, args)			
+		\endIf
+		\resetReferences
+	\endForeach
+	of
+	\value(_hc)		
+\endForeach</yseop-yml:text>
+                    <yseop-yml:inline-assemblies>
+                        <yseop-yml:singleSentenceLinkAssembly name="assembly" language="en">
+                            <yseop-yml:chooseSeparatorOptions>
+                                <yseop-yml:beforeEachItemCommaSelected>true</yseop-yml:beforeEachItemCommaSelected>
+                                <yseop-yml:beforeEachItemOtherText/>
+                                <yseop-yml:beforeLastItemAndSelected>true</yseop-yml:beforeLastItemAndSelected>
+                                <yseop-yml:beforeLastItemOtherText/>
+                                <yseop-yml:maxCountOfItemsForEachSentenceValue>3</yseop-yml:maxCountOfItemsForEachSentenceValue>
+                                <yseop-yml:endOfSentenceDotSelected>true</yseop-yml:endOfSentenceDotSelected>
+                                <yseop-yml:endOfSentenceQuestionMarkSelected>false</yseop-yml:endOfSentenceQuestionMarkSelected>
+                                <yseop-yml:endOfSentenceOtherSelected>false</yseop-yml:endOfSentenceOtherSelected>
+                                <yseop-yml:switchThresholdValue>4</yseop-yml:switchThresholdValue>
+                            </yseop-yml:chooseSeparatorOptions>
+                            <yseop-yml:beginEndWithOptions>
+                                <yseop-yml:generalBeginWithText/>
+                                <yseop-yml:generalEndWithText/>
+                                <yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemBeginWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemBeginWithSpecificText/>
+                                <yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>true</yseop-yml:onlyOneItemEndWithSameAsGeneralSelected>
+                                <yseop-yml:onlyOneItemEndWithSpecificText/>
+                                <yseop-yml:noItemGenerateNothingSelected>true</yseop-yml:noItemGenerateNothingSelected>
+                                <yseop-yml:noItemSentenceText/>
+                                <yseop-yml:inGeneralBulletBeginSameAsListSelected>true</yseop-yml:inGeneralBulletBeginSameAsListSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificSelected>false</yseop-yml:inGeneralBulletBeginSpecificSelected>
+                                <yseop-yml:inGeneralBulletBeginSpecificText/>
+                                <yseop-yml:inGeneralBulletEndSameAsListSelected>true</yseop-yml:inGeneralBulletEndSameAsListSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificSelected>false</yseop-yml:inGeneralBulletEndSpecificSelected>
+                                <yseop-yml:inGeneralBulletEndSpecificText/>
+                            </yseop-yml:beginEndWithOptions>
+                            <yseop-yml:limitSizeOptions>
+                                <yseop-yml:noLimitSelected>true</yseop-yml:noLimitSelected>
+                                <yseop-yml:onlyFirstElementsNumberValue>3</yseop-yml:onlyFirstElementsNumberValue>
+                                <yseop-yml:sentenceSizeTypeValue>30</yseop-yml:sentenceSizeTypeValue>
+                                <yseop-yml:limitByTypeValue>words</yseop-yml:limitByTypeValue>
+                                <yseop-yml:sentenceEndEtcSelected>true</yseop-yml:sentenceEndEtcSelected>
+                                <yseop-yml:sentenceEndOtherText/>
+                            </yseop-yml:limitSizeOptions>
+                        </yseop-yml:singleSentenceLinkAssembly>
+                    </yseop-yml:inline-assemblies>
+                    <yseop-yml:inline-dslFunctionCalls/>
+                </yseop-yml:granuleContent>
+            </yseop-yml:granuleUnilingueContent>
+        </yseop-yml:granuleI18nContents>
+        <yseop-yml:dslCondition/>
+        <yseop-yml:name/>
+        <yseop-yml:creationDate>2013-01-31T14:39:34.708Z</yseop-yml:creationDate>
+        <yseop-yml:properties identifier="d88bee64-a93e-4afe-a102-5395856bf544"/>
+    </yseop-yml:textGranule>
+    <yseop-yml:localVariables>Collection holdersCategory
+List res</yseop-yml:localVariables>
+    <yseop-yml:advancedContent>
+static {
+	// is c1 in c2 ?
+	function deepContains(Collection c1, Collection c2)
+	--> domains Boolean
+	--> action {
+			foreach(_elt,c2) {
+				if(_elt.equals(c1) == true) {
+					return true;
+				}
+			}
+			return false;
+		}
+	;
+	
+	function fctCompareCollectionsSizes(Collection c1, Collection c2)
+		--> domains Integer
+		--> action {
+			return c1.size() - c2.size();
+		}
+	;
+	
+	SortParameter paramSortListsBySize
+		--> ascendant 			true
+		--> expressionToValuate	fctCompareCollectionsSizes
+		--> order				_CALCULATED_RELATIVE_ORDER
+	;
+}
+-->  action {
+
+	holdersCategory = new(OrderedSet);
+	//holdersCategory.duplicates = false;
+	
+	foreach(_op,ownedProducts){
+		res = new(List);
+		if(LibActors:OwnedProduct(_op)>>holders.size()>1) {
+			foreach(_holder, LibActors:OwnedProduct(_op)>>holders) {
+				res.add(_holder);
+			}
+		} else {
+			res.add(LibActors:OwnedProduct(_op).holders);
+		}
+		if(deepContains(res,holdersCategory) != true){
+			holdersCategory.add(res);
+		}
+	}
+	
+	holdersCategory.sort(paramSortListsBySize);
+	logInfo("holdersCategory : ",holdersCategory);
+	
+	this.text.write();	
+	
+}</yseop-yml:advancedContent>
+    <yseop-yml:functionParameters>
+        <yseop-yml:parameters/>
+    </yseop-yml:functionParameters>
+    <yseop-yml:ymlParameters>List ownedProducts
+
+NamedArgumentsTable args
+ --> additionnalVarArgs true
+</yseop-yml:ymlParameters>
+    <yseop-yml:name>productsWithOwner</yseop-yml:name>
+    <yseop-yml:creationDate>2013-01-31T14:39:34.53Z</yseop-yml:creationDate>
+    <yseop-yml:properties identifier="e51736dd-9a50-4232-b8a5-840e55024e0a"/>
+</yseop-yml:ymlTextFunction>

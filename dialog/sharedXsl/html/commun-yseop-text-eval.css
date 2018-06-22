@@ -1,0 +1,55 @@
+/*
+  text trace CSS
+*/
+
+/*.text-eval {
+  display: block;
+  padding: 5px 0px 5px 30px;
+}*/
+
+.text-eval_content {
+  color: black;
+}
+
+span.text-eval_content:hover {
+  /*background-color: rgba(200, 54, 54, .5);*/
+}
+
+.text_eval_moreOrLess_icon {
+  height: 32px;
+}
+
+.more {
+  background-image: url("more-text.png");
+  background-repeat: no-repeat;
+}
+
+.less {
+  background-image: url("less-text.png");
+  background-repeat: no-repeat;
+}
+
+.text-eval_data {
+  display: none;
+}
+
+.data_title {
+  /*font-weight: bold;*/
+  color: #999;
+}
+
+.data_value {
+  font-weight: bold;
+}
+
+.ui-tooltip {
+  width:600px;
+  padding:15px;
+  position: absolute;
+ /* max-height: 4em;*/
+
+}
+
+.ui-tooltip-content {
+  font-size: 0.8em;
+}

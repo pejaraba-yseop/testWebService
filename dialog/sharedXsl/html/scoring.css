@@ -1,0 +1,150 @@
+/*
+  textes arguments
+*/
+.argumentPositif {
+  color:blue;
+}
+.argumentNegatif {
+  color:red;
+}
+.egalement {
+  color:green;
+}
+
+
+/*
+  tableau comparatif des offres
+*/
+
+.badValueJudgment {
+  background: red;
+}
+
+.goodValueJudgment {
+  background: green;
+}
+
+.averageValueJudgment {
+  /* background: grey; */
+}
+
+
+
+/*
+  tableaux de détail
+  pour la re7
+*/
+
+.tableComparatifRegles {
+  border-collapse:collapse;
+}
+.tableComparatifRegles td, .tableComparatifRegles th {
+  border: 2px solid blue;
+}
+                        
+.tableResume {
+  border-collapse:collapse;
+}
+.tableResume td, .tableResume th {
+  border: 1px solid black;
+} 
+
+.tableCriterions {
+  border-collapse:collapse;
+}
+.tableCriterions td, .tableCriterions th {
+  border: 1px solid black;
+} 
+
+
+
+
+table {
+  float:left;
+  table-layout:fixed;
+  width:100%;
+  overflow:hidden;
+  border:1px solid black;
+  word-wrap:break-word;
+}
+
+
+.tableReponseAuBesoin {
+  border:0px;
+}
+
+th {
+  border:1px solid black;
+  font-weight: normal;
+  font-style: italic;
+}
+
+td {
+  border:1px solid black;
+  vertical-align:top;
+}
+
+.tableReponseAuBesoin td {
+  border:0px;
+}
+
+
+.tableResumeCol1 {
+  width: 50%;
+}
+.tableResumeCol2 {
+  width: 10%;
+}
+.tableResumeCol3 {
+  width: 25%;
+}
+.tableResumeCol4 {
+  width: 15%;
+}
+
+
+.tableCriterionsCol1 {
+  width: 30%;
+}
+.tableCriterionsCol2 {
+  width: 10%;
+}
+.tableCriterionsCol3 {
+  width: 30%;
+}
+.tableCriterionsCol4 {
+  width: 10%;
+}
+
+
+.tableReponseAuBesoinCol1 {
+  width: 80%;
+}
+
+.tableReponseAuBesoinCol2 {
+  width: 20%;
+}
+
+
+/*************** Criteria Details **************/
+ul.criteriaDetails li {
+	/*list-style-type:upper-alpha;*/
+}
+
+ul.criteriaDetails li.total {
+	list-style:none;
+}
+
+li.weight,
+li.finalClientImportance,
+li.finalCriterionScore,
+ li.finalClientImportance {
+	list-style-type:lower-alpha;
+}
+
+
+li.finalCriterionWeight,
+li.offerMatchingPercentage,
+li.finalCriterionWeight {
+	list-style:none;
+}

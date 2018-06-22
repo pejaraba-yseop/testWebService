@@ -1,0 +1,248 @@
+_FILE_TYPE_ F
+ 
+@defineValue XmlElement XmlTree
+ 
+/** project specific beforeExternReferences.dcl **/
+ 
+@if(exists_file("src/beforeExternReferences.dcl") == true)
+  src/beforeExternReferences.dcl  
+@endif
+@if(exists_file("src/Prj/beforeExternReferences.dcl") == true)
+  src/Prj/beforeExternReferences.dcl  
+@endif
+ 
+/** end of project specific beforeExternReferences.dcl **/
+ 
+@if(exists_file("src/fw/beforeExternReferences.dcl") == true)
+        src/fw/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file("lib/fw/beforeExternReferences.dcl") == true)
+        lib/fw/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file("src/fwWs/beforeExternReferences.dcl") == true)
+        src/fwWs/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file("lib/fwWs/beforeExternReferences.dcl") == true)
+        lib/fwWs/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file("src/fwCallCenter/beforeExternReferences.dcl") == true)
+        src/fwCallCenter/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file("lib/fwCallCenter/beforeExternReferences.dcl") == true)
+        lib/fwCallCenter/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file("src/fwDialog/beforeExternReferences.dcl") == true)
+        src/fwDialog/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file("lib/fwDialog/beforeExternReferences.dcl") == true)
+        lib/fwDialog/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file("src/libScoring/beforeExternReferences.dcl") == true)
+        src/libScoring/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file("lib/libScoring/beforeExternReferences.dcl") == true)
+        lib/libScoring/beforeExternReferences.dcl
+@endif
+
+@if(exists_file("lib/libCube/beforeExternReferences.dcl") == true)
+        lib/libCube/beforeExternReferences.dcl
+@endif
+
+@if(exists_file("lib/libGeo_countries/beforeExternReferences.dcl") == true)
+        lib/libGeo_countries/beforeExternReferences.dcl
+@endif
+ 
+@if(exists_file(".generated-yml/extern_references_objects.yml") == true)
+  .generated-yml/extern_references_objects.yml
+@endif
+ 
+@if(exists_file(".generated-yml/extern_references.yml") == true)
+  .generated-yml/extern_references.yml
+@endif
+ 
+@if(exists_file(".generated-yml/verb.lib.yml") == true)
+  .generated-yml/verb.lib.yml
+@endif
+ 
+@if(exists_file("src/fw/interfaces.kao") == true)
+  src/fw/interfaces.kao
+@endif
+ 
+@if(exists_file("lib/fw/interfaces.kao") == true)
+  lib/fw/interfaces.kao
+@endif
+ 
+@if(exists_file("src/fwWs/interfaces.kao") == true)
+  src/fwWs/interfaces.kao
+@endif
+ 
+@if(exists_file("lib/fwWs/interfaces.kao") == true)
+  lib/fwWs/interfaces.kao
+@endif
+ 
+@if(exists_file("src/fwCallCenter/interfaces.kao") == true)
+  src/project/interfaces.kao
+  src/fwCallCenter/interfaces.kao
+@endif
+ 
+@if(exists_file("lib/fwCallCenter/interfaces.kao") == true)
+  lib/fwCallCenter/interfaces.kao
+@endif
+ 
+@if(exists_file("src/fwDialog/interfaces.kao") == true)
+   src/fwDialog/interfaces.kao
+@endif
+ 
+@if(exists_file("lib/fwDialog/interfaces.kao") == true)
+   lib/fwDialog/interfaces.kao
+@endif
+ 
+@if(exists_file("src/libScoring/interfaces.kao") == true)
+  src/libScoring/interfaces.kao  
+@endif
+ 
+@if(exists_file("lib/libScoring/interfaces.kao") == true)
+  lib/libScoring/interfaces.kao  
+@endif
+
+@if(exists_file("lib/libGeo_countries/interfaces.kao") == true)
+        lib/libGeo_countries/interfaces.kao
+@endif
+ 
+@if(exists_file("src/libActors/interfaces.kao") == true)
+  src/libActors/interfaces.kao  
+@endif 
+ 
+@if(exists_file("lib/libActors/interfaces.kao") == true)
+  lib/libActors/interfaces.kao  
+@endif 
+ 
+@if(exists_file("src/fwModule/interfaces.kao") == true)
+  src/fwModule/interfaces.kao
+@endif
+ 
+@if(exists_file("lib/fwModule/interfaces.kao") == true)
+  lib/fwModule/interfaces.kao
+@endif
+
+@if(exists_file("lib/libCube/interfaces.kao") == true)
+  lib/libCube/interfaces.kao  
+@endif 
+ 
+/** project specific interfaces **/
+ 
+@if(exists_file("src/interfaces.kao") == true)
+  src/interfaces.kao
+@endif
+ 
+@if(exists_file("src/Prj/interfaces.kao") == true)
+  src/Prj/interfaces.kao  
+@endif
+
+@if(exists_file("src/_technical/interfaces.kao") == true)
+  src/_technical/interfaces.kao  
+@endif 
+ 
+ 
+/** end of project specific interfaces **/
+ 
+.generated-yml/headers.yml
+ 
+@if(exists_file(".generated-yml/extern_references_functions.yml") == true)
+  .generated-yml/extern_references_functions.yml
+@endif
+ 
+@if(exists_file("src/fw/implementations.kao") == true)
+  src/fw/implementations.kao
+@endif
+ 
+@if(exists_file("lib/fw/implementations.kao") == true)
+  lib/fw/implementations.kao
+@endif
+ 
+@if(exists_file("src/fwWs/implementations.kao") == true)
+  src/fwWs/implementations.kao
+@endif
+ 
+@if(exists_file("lib/fwWs/implementations.kao") == true)
+  lib/fwWs/implementations.kao
+@endif
+ 
+ 
+@if(exists_file("src/fwCallCenter/implementations.kao") == true)
+  src/fwCallCenter/implementations.kao
+@endif
+ 
+@if(exists_file("lib/fwCallCenter/implementations.kao") == true)
+  lib/fwCallCenter/implementations.kao
+@endif
+ 
+@if(exists_file("src/fwDialog/implementations.kao") == true)  
+src/fwDialog/implementations.kao
+@endif
+ 
+@if(exists_file("lib/fwDialog/implementations.kao") == true)  
+lib/fwDialog/implementations.kao
+@endif
+ 
+@if(exists_file("src/libScoring/implementations.kao") == true)
+  src/libScoring/implementations.kao  
+@endif
+ 
+@if(exists_file("lib/libScoring/implementations.kao") == true)
+  lib/libScoring/implementations.kao  
+@endif
+
+
+@if(exists_file("lib/libGeo_countries/implementations.kao") == true)
+        lib/libGeo_countries/implementations.kao
+@endif
+
+ 
+@if(exists_file("src/libActors/implementations.kao") == true)
+  src/libActors/implementations.kao  
+@endif
+ 
+@if(exists_file("lib/libActors/implementations.kao") == true)
+  lib/libActors/implementations.kao  
+@endif
+ 
+@if(exists_file("src/fwModule/implementations.kao") == true)
+  src/fwModule/implementations.kao
+@endif
+ 
+@if(exists_file("lib/fwModule/implementations.kao") == true)
+  lib/fwModule/implementations.kao
+@endif
+
+@if(exists_file("lib/libCube/implementations.kao") == true)
+  lib/libCube/implementations.kao  
+@endif
+ 
+/** project specific implementations **/
+ 
+@if(exists_file("src/Prj/implementations.kao") == true)
+  src/Prj/implementations.kao  
+@endif
+ 
+@if(exists_file("src/implementations.kao") == true)
+  src/implementations.kao  
+@endif
+
+@if(exists_file("src/_technical/implementations.kao") == true)
+  src/_technical/implementations.kao  
+@endif
+ 
+/** end of project specific implementations **/
+ 
+ 
+.generated-yml/generated_text_elements.yml

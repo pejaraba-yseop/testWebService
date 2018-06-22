@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+		
+		<!-- ### External Libraries ### -->
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script language="javascript" type="text/javascript" src="scripts/jquery-1.11.2.min.js"></script>
+		<script language="javascript" type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+		<script language="javascript" type="text/javascript" src="scripts/jquery-touch-min.js"></script>
+		<script language="javascript" type="text/javascript" src="scripts/bootstrap.min.js"></script>
+		<link type="text/css" href="css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+		<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+		
+		<!-- ### project specific files ### -->
+		<script language="javascript" type="text/javascript" src="scripts/index.js"></script>
+		<link type="text/css" href="css/index.css" rel="stylesheet" />
+		<title>XYZ Power Co</title>
+	</head>
+
+	<body>
+
+		<div id="content">
+			<div class="headerArea">
+				<div class="buttonArea">
+					<button class="btn theCases" onmouseenter="showCaseContainer()">The Cases</button>
+					<span class="casesContainer" onmouseleave="hideCaseContainer()">
+						<button id="case_01" class="btn caseBtn">Unit A</button>
+						<button id="case_02" class="btn caseBtn">Unit B</button>
+						<button id="case_03" class="btn caseBtn">Unit C</button>
+						<!-- <button id="case_04" class="btn caseBtn" style="display: none;" >Unit D</button> -->
+						<!-- <button id="case_05" class="btn caseBtn">Unit E</button> -->
+						<!-- <button id="case_06" class="btn caseBtn" style="display: none;" >Unit F</button> -->
+						<button id="case_07" class="btn caseBtn">Unit G</button>
+						<!-- <button id="case_08" class="btn caseBtn">Unit H</button> -->
+						<button id="case_09" class="btn caseBtn">Unit I</button>
+						<button id="case_10" class="btn caseBtn">Unit J</button>
+						<!-- <button id="case_11" class="btn caseBtn" style="display: none;" >Unit K</button> -->
+						<!-- <button id="case_12" class="btn caseBtn">Unit L</button>				
+						-->
+						<button id="case_23" class="btn caseBtn">Unit W</button>						
+					</span>
+					<!-- <button class="btn theCases" onmouseenter="showConfigSettings()">Config</button> -->
+					<!-- <span class="configSettings" onmouseleave="hideConfigSettings()"> -->
+<!-- 					<span class="configSettings">
+						<label class="configSettings"><input type="checkbox" class="showAdvice">Show Advice</label>
+					</span> -->
+				</div>
+
+				<div class="logoArea">
+					<span class="loader">
+						<img id="loading" src="images/loading/animated.gif">
+						<img src="images/loading/poweredByYseop_grey.png" id="yseopLogo"/>
+						<img src="images/loading/poweredByYseop_greyLoading.png" id="loadingLogo"/>			
+					</span>
+					<img src="images/clientLogo.png" id="clientLogo">
+					<!-- max recommended size for client logo: 435x150 px -->
+				</div>
+			</div>	
+
+			<div class="contentArea" ></div>
+			
+			<div id='SOME_FIELD'></div>
+
+		</div>
+	</body>
+</html>

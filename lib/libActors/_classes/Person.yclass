@@ -1,0 +1,635 @@
+
+
+// ----------------------------------------------------------------------------------------------
+// ------------------------------   LibActors:Person			  -------------------------------
+// ----------------------------------------------------------------------------------------------
+
+interface LibActors:Person
+	
+	field civility
+	--> domains Civility
+	--> xmlMapping XmlMappingProperty_SAVE
+		--> dsl	-> Textualization 
+	                --> root "civilité"
+	                --> language LANG_fr
+	                --> gender MASCULINE
+	       	        --> number SINGULAR
+	        	;
+	    --> dsl -> Textualization 
+	                --> root "civility"
+	                --> language LANG_en
+	                --> number SINGULAR
+	        ;
+			
+		--> dsl -> Textualization 
+	                --> root "civilidad"
+	                --> language LANG_es
+	                --> number SINGULAR
+					--> gender FEMININE
+	        ;
+	
+	field firstName
+	--> domains String
+	--> xmlMapping XmlMappingProperty_SAVE
+	--> dsl	-> Textualization 
+                --> root "prénom"
+                --> language LANG_fr
+                --> gender MASCULINE
+                --> number SINGULAR
+        	;
+			--> dsl	-> Textualization 
+                --> root "nombre"
+                --> language LANG_es
+                --> gender MASCULINE
+                --> number SINGULAR
+        	;
+    --> dsl -> Textualization 
+                --> root "first name"
+                --> language LANG_en
+                --> number SINGULAR
+        ;
+
+	field lastName
+	--> domains String
+	--> xmlMapping XmlMappingProperty_SAVE
+	--> dsl 	-> Textualization 
+                --> root "nom"
+                --> language LANG_fr
+                --> gender MASCULINE
+                --> number SINGULAR
+        		;
+    --> dsl -> Textualization 
+                --> root "last name"
+                --> language LANG_en
+                --> number SINGULAR
+        ;
+	--> dsl 	-> Textualization 
+                --> root "apellido"
+                --> language LANG_es
+                --> gender MASCULINE
+                --> number SINGULAR
+        		;
+
+	field isAlive
+	--> domains Boolean
+	--> defaultValue true
+	--> xmlMapping XmlMappingProperty_SAVE
+	--> dsl -> Textualization 
+                --> root "est en vie"
+                --> language LANG_fr
+                --> gender MASCULINE
+                --> number SINGULAR
+                --> hasDeterminer false
+        ;
+		--> dsl -> Textualization 
+                --> root "esta vivo"
+                --> language LANG_es
+                --> gender MASCULINE
+                --> number SINGULAR
+                --> hasDeterminer false
+        ;
+	
+	
+	method getReducedFirstName()
+	--> domains String
+
+	// ----------- classProperties ----------
+
+    classProperties
+    --> dsl -> Textualization 
+            --> language	LANG_fr
+            --> root		"personne"
+            --> gender		FEMININE
+            --> number		SINGULAR
+			;
+	--> dsl -> Textualization
+			--> language	LANG_en
+			--> root		"person"
+			--> number		SINGULAR
+			;
+	--> dsl -> Textualization 
+            --> language	LANG_es
+            --> root		"persona"
+            --> gender		FEMININE
+            --> number		SINGULAR
+			;
+; // LibActors:Person
+
+implementation LibActors:Person
+	override {
+		getNativeGender function
+		toStringInStream function
+	}
+	
+	--> trackInstances true
+		
+;
+
+function LibActors:Person::getNativeGender()
+--> action {
+	if (civility != null) {
+		return civility.getNativeGender();
+	} else {
+		assertFalse( \( civility of \value(this.firstName) is undefined. \) );
+		return null;
+	}
+}
+;
+
+
+function LibActors:Person::getReducedFirstName()
+--> return 
+			ifExpr(firstName.length() > 6)
+			then concat(firstName.substring(_POSITION, 1, _POSITION, 5),".")
+			else firstName
+;
+
+// ----------------------------------------------------------------------------------------------
+// ------------------------------   toStringInStream   ------------------------------------------
+// ----------------------------------------------------------------------------------------------
+
+ConstList LibActors:anaphoraUsage
+{	LibActors:PRONOUN_USAGE,
+	LibActors:NO_PRONOUN_USAGE,
+
+	LibActors:PERSONAL_PRONOUN,
+	LibActors:SALUTATION_LAST_NAME,
+	LibActors:SALUTATION_FIRST_NAME,
+	LibActors:FIRST_LAST_NAME,
+	LibActors:SALUTATION_SHORT,
+	LibActors:THE_CLIENT,
+	LibActors:THIS_CLIENT,
+	LibActors:OUR_CLIENT,
+	LibActors:THE_SALESPERSON,
+	LibActors:THIS_PERSON
+};
+
+function LibActors:Person::toStringInStream ({	[_CASE]: NlgCase case {__nullable},
+												[LibActors:_ANAPHORA]: LibActors:pronounUsage || LibActors:anaphoraType anaphoraUsage,
+												LibActors:REDUCED_FIRST_NAME: Boolean reducedFirstName,} args
+											)
+			
+--> local	NlgReferenceSignature	lastReferenceSignatureOtherPerson,
+			NlgReferenceSignature	lastReferenceSignatureSamePerson,
+			Object					persons,
+			Boolean					forbiddenPronoun
+
+static {
+
+	// --------------------------------------------------------------------
+	// -----------------   LibActors:writeAnaphorType  --------------------
+	// --------------------------------------------------------------------
+
+	TextFunction LibActors:writeAnaphorType ({[LibActors:ANAPHORA_MODE]: LibActors:anaphoraType mode} args)
+	--> text
+		\( 	
+			\switch(mode)
+
+			// -----------------  PERSONAL_PRONOUN
+
+			\case(LibActors:PERSONAL_PRONOUN)
+				\pronoun (_PERSONAL, _THIRD: persons, case)
+					\if (persons.isInstanceOf(Collection) == true)
+						\if (persons.size() > 1)
+							\setTextGranuleNumber(PLURAL)	
+						 \else
+							\setTextGranuleNumber(SINGULAR)
+						 \endIf
+					\endIf		
+
+			// -----------------  SALUTATION_LAST_NAME
+
+			\case(LibActors:SALUTATION_LAST_NAME)
+				\thirdSalutation (	persons,
+									SALUTATION_POLITE_SHORT, SALUTATION_LAST_NAME,
+									_THROW_TEXT_GRANULE_AGREEMENT
+								)
+
+			// -----------------  SALUTATION_FIRST_NAME
+
+			\case(LibActors:SALUTATION_FIRST_NAME)
+				\thirdSalutation (	persons,
+									SALUTATION_FIRST_NAME,
+									_THROW_TEXT_GRANULE_AGREEMENT
+								)
+
+			// -----------------  FIRST_LAST_NAME
+
+			\case(LibActors:FIRST_LAST_NAME)
+				\thirdSalutation (	persons,
+									SALUTATION_FIRST_NAME, SALUTATION_LAST_NAME,
+									_THROW_TEXT_GRANULE_AGREEMENT
+								)
+
+			// -----------------  SALUTATION_SHORT
+
+			\case(LibActors:SALUTATION_SHORT)
+				\thirdSalutation (	persons,
+									SALUTATION_POLITE_SHORT,
+									_THROW_TEXT_GRANULE_AGREEMENT
+								)
+
+			// -----------------  LibActors:SALUTATION_POLITE_DEAR
+
+			\case(LibActors:SALUTATION_POLITE_DEAR)
+				\thirdSalutation (	persons,
+									SALUTATION_LAST_NAME,
+									SALUTATION_FIRST_NAME,
+									SALUTATION_POLITE,
+									SALUTATION_DEAR,
+									_THROW_TEXT_GRANULE_AGREEMENT
+								)
+			
+			// -----------------  LibActors:SALUTATION_DEAR_FIRST_NAME
+
+			\case(LibActors:SALUTATION_DEAR_FIRST_NAME)
+				\thirdSalutation (	persons,
+									SALUTATION_FIRST_NAME,
+									SALUTATION_DEAR,
+									_THROW_TEXT_GRANULE_AGREEMENT
+								)
+			
+			// -----------------  LibActors:SALUTATION_DEAR_CIVILITY
+
+			\case(LibActors:SALUTATION_DEAR_FIRST_NAME)
+				\thirdSalutation (	persons,
+									SALUTATION_POLITE_SHORT,
+									SALUTATION_DEAR,
+									_THROW_TEXT_GRANULE_AGREEMENT
+								)
+			
+			// -----------------  THE_CLIENT
+
+			\case(LibActors:THE_CLIENT)
+				\value(	switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+						case (LANG_en) : 
+							"client"
+						case (LANG_fr) : 
+							"client"
+						case (LANG_es) : 
+							"cliente"
+						default :
+							"TO_TEXTUALIZE_CLIENT"
+						},
+						_DETERMINER: DEFINITE_ARTICLE, 
+						_THIRD: persons,
+						_THROW_TEXT_GRANULE_AGREEMENT
+						)
+
+			// -----------------  THIS_CLIENT
+
+			\case(LibActors:THIS_CLIENT)
+				\value(	switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+						case (LANG_en) : 
+							"client"
+						case (LANG_fr) : 
+							"client"
+						case (LANG_es) : 
+							"cliente"
+						default :
+							"TO_TEXTUALIZE_CLIENT"
+						},
+						_DETERMINER: DEMONSTRATIVE_DETERMINER, 
+						_THIRD: persons,
+						_THROW_TEXT_GRANULE_AGREEMENT
+						)
+
+			// -----------------  OUR_CLIENT
+
+			\case(LibActors:OUR_CLIENT)
+				\value (switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+						case (LANG_en) : 
+							"client"
+						case (LANG_fr) : 
+							"client"
+						case (LANG_es) : 
+							"cliente"
+						default :
+							"TO_TEXTUALIZE_CLIENT"
+						},
+						_THIRD: persons,
+						_THROW_TEXT_GRANULE_AGREEMENT,
+						_OWNER: _SENDER
+						)
+
+			// -----------------  THE_SALESPERSON
+
+			\case(LibActors:THE_SALESPERSON)
+				\value(	switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+						case (LANG_en) : 
+							-> NlgSubstantive
+								--> root	"salesperson"
+								--> plural	"salespeople"
+							;
+						case (LANG_fr) : 
+							"vendeur"
+						case (LANG_es) : 
+							"vendedor"
+						default :
+							"TO_TEXTUALIZE_SALESPERSON"
+						},
+						_DETERMINER: DEFINITE_ARTICLE, 
+						_THIRD: persons,
+						_THROW_TEXT_GRANULE_AGREEMENT
+						)
+						
+			// -----------------  THIS_PERSON
+
+			\case(LibActors:THIS_PERSON)
+				\value(	switchExpr(TEXT_EXECUTION_CONTEXT.kBBaseLanguage) {
+						case (LANG_en) : 
+							"person"
+						case (LANG_fr) : 
+							"personne"
+						case (LANG_es) : 
+							"persona"
+						default :
+							"TO_TEXTUALIZE_PERSON"
+						},
+						_DETERMINER: DEMONSTRATIVE_DETERMINER, 
+						_THIRD: persons,
+						_THROW_TEXT_GRANULE_AGREEMENT
+						)
+					
+			\endSwitch
+		\)
+	; // LibActors:writeAnaphorType
+
+	// --------------------------------------------------------------------
+	// -----------------   LibActors:writeAnaphor  ------------------------
+	// --------------------------------------------------------------------
+					
+	TextFunction LibActors:writeAnaphor ({[LibActors:ANAPHORA_MODE]: LibActors:anaphoraType mode} args)
+	--> text
+		\( 	
+			\if (mode != LibActors:PERSONAL_PRONOUN)
+				\setReferenceNumberOf(persons, null)
+			\endIf
+
+			\LibActors:writeAnaphorType(mode)
+			
+			\setReferenceKeyVal(LibActors:ANAPHORA_MODE, mode)
+		\)
+	; // LibActors:writeAnaphor
+
+	// --------------------------------------------------------------------
+	// -----------------   REPRESENTANT_PERSON     ------------------------
+	// --------------------------------------------------------------------
+
+	NlgRepresentant	REPRESENTANT_PERSON
+	--> modelForCollection true
+
+	// --------------------------------
+	// -------   referential   --------
+	// --------------------------------
+
+	--> referential	\(
+						\notEmptyString 
+						
+						\if(LIBACTORS_CONFIG.sameSexeRelation == true)
+							\if(reducedFirstName == true)
+								\if(persons.isInstanceOf(Collection) != true)
+										\value(persons.getReducedFirstName())
+								\else
+									\libActors:_texts:reducedFirstName(persons)
+								\endIf
+							\else
+							
+							\beginSynonym
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_FULL_NAME) == true)
+										\thirdSalutation (persons, SALUTATION_POLITE_SHORT, SALUTATION_FIRST_NAME, SALUTATION_LAST_NAME)
+									\endIf
+						
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_FIRST_NAME) == true)
+										\thirdSalutation (persons, SALUTATION_FIRST_NAME)
+									\endIf
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_DEAR_FIRST_NAME) == true)
+										\thirdSalutation (persons, SALUTATION_FIRST_NAME, SALUTATION_DEAR)
+									\endIf
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_POLITE_DEAR) == true)
+										\thirdSalutation (persons, SALUTATION_LAST_NAME, SALUTATION_FIRST_NAME, SALUTATION_POLITE_SHORT, SALUTATION_DEAR)
+									\endIf			
+							\endSynonym
+							\endIf			
+						\else
+							\beginSynonym
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_FULL_NAME) == true)
+										\thirdSalutation (persons, SALUTATION_POLITE_SHORT, SALUTATION_FIRST_NAME, SALUTATION_LAST_NAME)
+									\endIf
+								
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_LAST_NAME) == true)
+										\thirdSalutation (persons, SALUTATION_POLITE_SHORT, SALUTATION_LAST_NAME)
+									\endIf
+		
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_FIRST_NAME) == true)
+										\thirdSalutation (persons, SALUTATION_FIRST_NAME)
+									\endIf
+		
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:FIRST_LAST_NAME) == true)
+										\thirdSalutation (persons, SALUTATION_FIRST_NAME, SALUTATION_LAST_NAME)
+									\endIf
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_DEAR_CIVILITY) == true)
+										\thirdSalutation (persons, SALUTATION_POLITE, SALUTATION_DEAR)
+									\endIf
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_DEAR_FIRST_NAME) == true)
+										\thirdSalutation (persons, SALUTATION_FIRST_NAME, SALUTATION_DEAR)
+									\endIf
+								\choice
+									\if (LIBACTORS_CONFIG.referentialType.contains(LibActors:SALUTATION_POLITE_DEAR) == true)
+										\thirdSalutation (persons, SALUTATION_LAST_NAME, SALUTATION_FIRST_NAME, SALUTATION_POLITE_SHORT, SALUTATION_DEAR)
+									\endIf	
+							\endSynonym
+						\endIf
+						
+						\if (persons.isInstanceOf(Collection) == true)
+							\if (persons.size() > 1)
+								\setTextGranuleNumber(PLURAL)	
+							 \else
+							 	\setTextGranuleNumber(SINGULAR)
+							 \endIf
+						\endIf		
+					\) // referential
+						
+	// --------------------------------
+	// -------   anaphor   ------------
+	// --------------------------------
+	--> anaphor		\(
+						\notEmptyString
+
+					    \if (anaphoraUsage != null)
+							\LibActors:writeAnaphor (anaphoraUsage)
+						\else
+							\if(	lastReferenceSignatureOtherPerson != null
+								&& 	lastReferenceSignatureOtherPerson.getKeyVal(LibActors:ANAPHORA_MODE) != null
+								)
+								\LibActors:writeAnaphor (lastReferenceSignatureOtherPerson.getKeyVal(LibActors:ANAPHORA_MODE))
+								// forced to the current mode
+
+								\setReferenceKeyVal(LibActors:ANAPHORA_MODE, null)
+						
+							\else
+								\if (LIBACTORS_CONFIG.sameSexeRelation == true)
+									//\thirdSalutation (persons, SALUTATION_FIRST_NAME)
+									\thirdSalutation (persons,	SALUTATION_POLITE_SHORT, SALUTATION_FIRST_NAME, SALUTATION_LAST_NAME)
+								\else
+									\beginSynonym
+								
+										// -----------------  PERSONAL_PRONOUN
+										
+										\choice
+											\if (	LIBACTORS_CONFIG.anaphoraType.contains(LibActors:PERSONAL_PRONOUN) == true
+												&&	forbiddenPronoun != true
+												)
+												\LibActors:writeAnaphor (LibActors:PERSONAL_PRONOUN)
+											\endIf
+
+										// -----------------  SALUTATION_LAST_NAME
+
+										\choice
+											\if (LIBACTORS_CONFIG.anaphoraType.contains(LibActors:SALUTATION_LAST_NAME) == true)
+												\LibActors:writeAnaphor (LibActors:SALUTATION_LAST_NAME)
+											\endIf
+
+										// -----------------  SALUTATION_FIRST_NAME
+
+										\choice
+											\if (LIBACTORS_CONFIG.anaphoraType.contains(LibActors:SALUTATION_FIRST_NAME) == true)
+												\LibActors:writeAnaphor (LibActors:SALUTATION_FIRST_NAME)	
+											\endIf
+
+										// -----------------  FIRST_LAST_NAME
+
+										\choice
+											\if (LIBACTORS_CONFIG.anaphoraType.contains(LibActors:FIRST_LAST_NAME) == true)
+												\LibActors:writeAnaphor (LibActors:FIRST_LAST_NAME)
+											\endIf
+
+										// -----------------  SALUTATION_SHORT
+											
+										\choice
+											\if (LIBACTORS_CONFIG.anaphoraType.contains(LibActors:SALUTATION_SHORT) == true)
+												\LibActors:writeAnaphor (LibActors:SALUTATION_SHORT)
+											\endIf
+											
+										// -----------------  THE_CLIENT
+			
+										\choice
+											\if (	LIBACTORS_CONFIG.anaphoraType.contains(LibActors:THE_CLIENT) == true
+												&&	lastReferenceSignatureOtherPerson == null
+											)
+												\LibActors:writeAnaphor (LibActors:THE_CLIENT)
+											\endIf
+
+										// -----------------  THIS_CLIENT
+										
+										\choice
+											\if (	LIBACTORS_CONFIG.anaphoraType.contains(LibActors:THIS_CLIENT) == true
+												&&	lastReferenceSignatureOtherPerson == null
+											)
+												\LibActors:writeAnaphor (LibActors:THIS_CLIENT)
+											\endIf
+										
+										
+										// -----------------  OUR_CLIENT
+
+										\choice
+        								 	\if (LIBACTORS_CONFIG.anaphoraType.contains(LibActors:OUR_CLIENT) == true)
+        								        \LibActors:writeAnaphor (LibActors:OUR_CLIENT)
+        								    \endIf	 
+        								    
+        								// -----------------  THE_SALESPERSON
+			
+										\choice
+											\if (	LIBACTORS_CONFIG.anaphoraType.contains(LibActors:THE_SALESPERSON) == true
+												&&	lastReferenceSignatureOtherPerson == null
+											)
+												\LibActors:writeAnaphor (LibActors:THE_SALESPERSON)
+											\endIf
+        								 
+        								    
+
+										// -----------------  THIS_PERSON
+
+										\choice
+											\if (	LIBACTORS_CONFIG.anaphoraType.contains(LibActors:THIS_PERSON) == true
+												&&	lastReferenceSignatureOtherPerson == null
+											)
+												\LibActors:writeAnaphor (LibActors:THIS_PERSON)
+											\endIf
+									
+									\endSynonym
+								\endIf
+							\endIf
+						\endIf
+					\)
+	; // REPRESENTANT_PERSON
+}  // static
+
+--> action
+	{
+		persons = evaluate(this);
+
+		if (anaphoraUsage == LibActors:PRONOUN_USAGE)
+			anaphoraUsage = LibActors:PERSONAL_PRONOUN;
+		else
+			if (anaphoraUsage == LibActors:NO_PRONOUN_USAGE)
+			{
+				forbiddenPronoun = true;
+				anaphoraUsage = null;
+			}
+
+		if (	anaphoraUsage != null
+			&&	LIBACTORS_CONFIG.anaphoraType.contains(anaphoraUsage) != true
+		)
+			anaphoraUsage = null;
+
+		// --------------------------
+
+		lastReferenceSignatureOtherPerson = ifExpr (persons.isInstanceOf(LibActors:Person) == false)
+											 then
+												TEXT_CONTENT_EXECUTION_CONTEXT.getReferenceSignature (_IN, LibActors:Person)
+											else
+											@if (engine_version_compatible ("6.0.0.RC35") == true)
+												TEXT_CONTENT_EXECUTION_CONTEXT.getReferenceSignature (_IN, LibActors:Person, _MINUS, persons);
+											@else
+												TEXT_CONTENT_EXECUTION_CONTEXT.getReferenceSignature (_IN, minus(LibActors:Person, {persons}));
+											@endif
+
+		lastReferenceSignatureSamePerson = TEXT_CONTENT_EXECUTION_CONTEXT.getReferenceSignature (persons);
+
+		if (	lastReferenceSignatureOtherPerson != null
+			&&	lastReferenceSignatureSamePerson != null
+			&&	lastReferenceSignatureSamePerson.charsCountSinceLastRepresentation < lastReferenceSignatureOtherPerson.charsCountSinceLastRepresentation
+			)
+		{
+			free (lastReferenceSignatureOtherPerson);
+			lastReferenceSignatureOtherPerson = null;
+		}
+
+		// --------------------------
+
+		REPRESENTANT_PERSON.write (_REFERENT: this, args);
+
+		if (lastReferenceSignatureOtherPerson != null)
+			free (lastReferenceSignatureOtherPerson);
+
+		if (lastReferenceSignatureSamePerson != null)
+			free (lastReferenceSignatureSamePerson);
+	} 
+; // LibActors:Person::toStringInStream
+
+complete MAIL_PARAM_CONTEXT
+--> civilityAttribute   LibActors:Person::civility
+--> firstNameAttribute  LibActors:Person::firstName
+--> lastNameAttribute   LibActors:Person::lastName
+;

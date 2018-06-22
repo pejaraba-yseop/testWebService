@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yseop-yml:usecase xmlns:yseop-yml="http://www.yseop.com/yml/storage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" domainModelVersion="3" identifier="f3eed6d3-6538-41f7-a60b-b70040f02680">
+    <yseop-yml:parentId/>
+    <yseop-yml:usecaseDatas/>
+    <yseop-yml:rulesets/>
+    <yseop-yml:dslConditions/>
+    <yseop-yml:dslActions/>
+    <yseop-yml:dslExpressionPaths/>
+    <yseop-yml:name>_usecase</yseop-yml:name>
+    <yseop-yml:creationDate>2012-06-26T12:42:22.134Z</yseop-yml:creationDate>
+    <yseop-yml:properties identifier="dafc6320-8145-4e60-8031-a11e0591f68f"/>
+</yseop-yml:usecase>

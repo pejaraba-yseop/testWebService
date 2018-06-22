@@ -1,0 +1,264 @@
+<?xml  version="1.0"  encoding="UTF-8"?>
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType  name="GeneralData">
+		<xsd:sequence>
+			<xsd:element  name="language"  type="Language"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="Language">
+		<xsd:sequence>
+			<xsd:element  name="i18nNameAttribute"  type="Attribute"/>
+			<xsd:element  name="listSeparator"  type="xsd:string"/>
+			<xsd:element  name="listEtc"  type="xsd:string"/>
+			<xsd:element  name="insertSpaceBeforeColon"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceBeforeExclamationMark"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceBeforeQuestionMark"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceBeforeComma"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceBeforePoint"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceBeforeSemiColon"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceBeforeRightParenthesis"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceBeforeOpeningBrace"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceBeforeClosingBrace"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceAfterColon"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceAfterExclamationMark"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceAfterQuestionMark"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceAfterComma"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceAfterPoint"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceAfterSemiColon"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceAfterRightParenthesis"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceAfterOpeningBrace"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceAfterClosingBrace"  type="xsd:boolean"/>
+			<xsd:element  name="acceptPointOnSentenceStart"  type="xsd:boolean"/>
+			<xsd:element  name="doubleQuoteStyle"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_DOUBLE_QUOTE_EN"/>
+					<xsd:enumeration  value="_DOUBLE_QUOTE_FR"/>
+					<xsd:enumeration  value="_DOUBLE_QUOTE_DE"/>
+					<xsd:enumeration  value="_DOUBLE_QUOTE_JA"/>
+					<xsd:enumeration  value="_RAW_DOUBLE_QUOTE"/>
+					<xsd:enumeration  value="_SINGLE_QUOTE"/>
+					<xsd:enumeration  value="_RAW_SINGLE_QUOTE"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="decimalPoint"  type="xsd:string"/>
+			<xsd:element  name="thousandSeparator"  type="xsd:string"/>
+			<xsd:element  name="base"  type="Language"/>
+			<xsd:element  name="rfc3066"  type="xsd:string"/>
+			<xsd:element  name="rfc4646"  type="xsd:string"/>
+			<xsd:element  name="languageIso639_1"  type="xsd:string"/>
+			<xsd:element  name="languageIso639_2"  type="xsd:string"/>
+			<xsd:element  name="languageIso639_3"  type="xsd:string"/>
+			<xsd:element  name="countryIso3166_1_alpha_2"  type="xsd:string"/>
+			<xsd:element  name="countryIso3166_1_alpha_3"  type="xsd:string"/>
+			<xsd:element  name="currencyUnit"  type="CurrencyUnit"/>
+			<xsd:element  name="defaultNlgCase"  type="NlgCase"/>
+			<xsd:element  name="defaultAdjectivePosition"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_AFTER_NOUN"/>
+					<xsd:enumeration  value="_BEFORE_NOUN"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="duringTranslation"  type="xsd:string"/>
+			<xsd:element  name="grammarItem"  type="GrammarItem"/>
+			<xsd:element  name="multilingualExpressionAttribute"  type="Attribute"/>
+			<xsd:element  name="insertSpaceBetweenWords"  type="xsd:boolean"/>
+			<xsd:element  name="development"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_COMPILED"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="runtime"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_COMPILED"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="kB"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_COMPILED"/>
+				</xsd:restriction>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="Attribute">
+		<xsd:sequence>
+			<xsd:element  name="defaultValue"/>
+			<xsd:element  name="updatable"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_NEVER"/>
+					<xsd:enumeration  value="_ALWAYS"/>
+					<xsd:enumeration  value="_COMPILATION"/>
+					<xsd:enumeration  value="_EXECUTION"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="poolingByInstance"  type="xsd:boolean"/>
+			<xsd:element  name="uniqueId"  type="xsd:boolean"/>
+			<xsd:element  name="nullable"  type="xsd:boolean"/>
+			<xsd:element  name="inheritable"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_STATIC_INHERITANCE"/>
+					<xsd:enumeration  value="_DYNAMIC_INHERITANCE"/>
+					<xsd:enumeration  value="_INSTANCIATED_DYNAMIC_INHERITANCE"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="xmlMapping"  type="XmlMappingProperty"/>
+			<xsd:element  name="implementLanguage"  type="Language"/>
+			<xsd:element  name="assess"  type="xsd:boolean"/>
+			<xsd:element  name="ignoreUnknownXmlId"  type="xsd:boolean"/>
+			<xsd:element  name="saveToYmlStream"  type="xsd:boolean"/>
+			<xsd:element  name="neutralizeObject"  type="xsd:boolean"/>
+			<xsd:element  name="neutralizeObjectByValue"  type="xsd:boolean"/>
+			<xsd:element  name="notifyChanges"  type="xsd:boolean"/>
+			<xsd:element  name="logChanges"  type="xsd:boolean"/>
+			<xsd:element  name="saveRecursively"  type="xsd:boolean"/>
+			<xsd:element  name="restorable"  type="xsd:boolean"/>
+			<xsd:element  name="automaticCreation"  type="xsd:boolean"/>
+			<xsd:element  name="sizeLevel2"  type="xsd:int"/>
+			<xsd:element  name="propertiesEditorExcluded"  type="xsd:boolean"/>
+			<xsd:element  name="valuableValue"  type="xsd:boolean"/>
+			<xsd:element  name="multivalued"  type="xsd:boolean"/>
+			<xsd:element  name="clonableValues"  type="xsd:boolean"/>
+			<xsd:element  name="initialInputOrigin"  type="xsd:boolean"/>
+			<xsd:element  name="dialogInputOrigin"  type="xsd:boolean"/>
+			<xsd:element  name="calculatedOrigin"  type="xsd:boolean"/>
+			<xsd:element  name="symmetric"  type="xsd:boolean"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="Symbol">
+		<xsd:sequence></xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="CurrencyUnit">
+		<xsd:sequence>
+			<xsd:element  name="iso4217"  type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="NlgCase">
+		<xsd:sequence></xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="GrammarItem">
+		<xsd:sequence>
+			<xsd:element  name="language"  type="Language"/>
+			<xsd:element  name="constraint"  type="GrammarConstraint"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="features"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="instantiate::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="combine::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="detach::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="printDebug::"  minOccurs="0"  maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="XmlMappingProperty">
+		<xsd:sequence>
+			<xsd:element  name="objectCreatedClass"  type="Class"/>
+			<xsd:element  name="valuesCorrespondance"  type="Collection"/>
+			<xsd:element  name="interpretText"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_NEVER"/>
+					<xsd:enumeration  value="_ALWAYS"/>
+					<xsd:enumeration  value="_IF_NOT_STRING"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="loadValues"  type="xsd:boolean"/>
+			<xsd:element  name="caseSensitiveLoad"  type="xsd:boolean"/>
+			<xsd:element  name="attributeForm"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_XML_ATTRIBUTE"/>
+					<xsd:enumeration  value="_XML_ELEMENT"/>
+					<xsd:enumeration  value="_EXPLICIT_MAPPING_XML_ELEMENT"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="factorizeMultipleSave"  type="xsd:boolean"/>
+			<xsd:element  name="factorizeMultipleLoad"  type="xsd:boolean"/>
+			<xsd:element  name="contentToSave">
+				<xsd:restriction>
+					<xsd:enumeration  value="false"/>
+					<xsd:enumeration  value="true"/>
+					<xsd:enumeration  value="_REF_IDENTIFIER"/>
+					<xsd:enumeration  value="_EXPANDED_OR_REF_PATH"/>
+					<xsd:enumeration  value="_EXPANDED"/>
+					<xsd:enumeration  value="_EXPANDED_AND_REF_IDENTIFIER"/>
+					<xsd:enumeration  value="_EXPANDED_OR_REF_PATH_WITHOUT_REF_IDENTIFIER"/>
+					<xsd:enumeration  value="_EXPANDED_WITHOUT_REF_IDENTIFIER"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="saveAlwaysClass"  type="xsd:boolean"/>
+			<xsd:element  name="ignoreIdKBStatic"  type="xsd:boolean"/>
+			<xsd:element  name="saveDynamicIdentifier"  type="xsd:boolean"/>
+			<xsd:element  name="saveDynamicObjectsAsStatic"  type="xsd:boolean"/>
+			<xsd:element  name="saveEnumPrefix"  type="xsd:boolean"/>
+			<xsd:element  name="saveAlwaysIdentifier"  type="xsd:boolean"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="GrammarConstraint">
+		<xsd:sequence></xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="Class">
+		<xsd:sequence>
+			<xsd:element  name="hasDynamicAttributes"  type="xsd:boolean"/>
+			<xsd:element  name="dynamicAttributesCount"  type="xsd:int"/>
+			<xsd:element  name="trackInstances"  type="xsd:boolean"/>
+			<xsd:element  name="dynamicInstances"  type="xsd:boolean"/>
+			<xsd:element  name="ignoreUnknownXmlId"  type="xsd:boolean"/>
+			<xsd:element  name="hasAccessorFunction"  type="xsd:boolean"/>
+			<xsd:element  name="freeable"  type="xsd:boolean"/>
+			<xsd:element  name="abstract"  type="xsd:boolean"/>
+			<xsd:element  name="instancesSize"  type="xsd:int"/>
+			<xsd:element  name="isAlwaysStringAble"  type="xsd:boolean"/>
+			<xsd:element  name="representableCompatible"  type="Symbol">
+				<xsd:restriction  base="Symbol">
+					<xsd:enumeration  value="_NEVER"/>
+					<xsd:enumeration  value="_ALWAYS"/>
+					<xsd:enumeration  value="_POSSIBLE"/>
+				</xsd:restriction>
+			</xsd:element>
+			<xsd:element  name="hasSpecificSyntax"  type="xsd:boolean"/>
+			<xsd:element  name="setIdIfNewObject"  type="xsd:boolean"/>
+			<xsd:element  name="idPrefix"  type="xsd:string"/>
+			<xsd:element  name="resolveLinksOnCompilation"  type="xsd:boolean"/>
+			<xsd:element  name="staticInheritance"  type="xsd:boolean"/>
+			<xsd:element  name="serializable"  type="xsd:boolean"/>
+			<xsd:element  name="xmlSaveClass"  type="xsd:boolean"/>
+			<xsd:element  name="package"  type="Package"/>
+			<xsd:element  name="businessRules"  type="Collection"/>
+			<xsd:element  name="dialogRules"  type="Collection"/>
+			<xsd:element  name="forkRules"  type="Collection"/>
+			<xsd:element  name="textModels"  type="Collection"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="Collection">
+		<xsd:sequence>
+			<xsd:element  name="unit"  type="Unit"/>
+			<xsd:element  name="style"/>
+			<xsd:element  name="itemsLabeling"/>
+			<xsd:element  name="objectToWrite"/>
+			<xsd:element  name="trueValueCorrespondance"/>
+			<xsd:element  name="deletableItems"  type="xsd:boolean"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="Package">
+		<xsd:sequence></xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="Unit">
+		<xsd:sequence>
+			<xsd:element  name="symbol"  type="xsd:string"/>
+			<xsd:element  name="format"  type="UnitFormat"/>
+			<xsd:element  name="decimalsCount"  type="xsd:int"/>
+			<xsd:element  name="scale"  type="xsd:double"/>
+			<xsd:element  name="setShortNamePrefix::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="setShortNameSuffix::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="setLongNameSuffix::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="getShortNamePrefix::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="getShortNameSuffix::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="getLongNameSuffix::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="writeValue::"  minOccurs="0"  maxOccurs="unbounded"/>
+			<xsd:element  name="writeSymbol::"  minOccurs="0"  maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType  name="UnitFormat">
+		<xsd:sequence>
+			<xsd:element  name="longNameSuffix"  type="xsd:string"/>
+			<xsd:element  name="shortNamePrefix"  type="xsd:string"/>
+			<xsd:element  name="shortNameSuffix"  type="xsd:string"/>
+			<xsd:element  name="insertSpaceAfterPrefix"  type="xsd:boolean"/>
+			<xsd:element  name="insertSpaceBeforeShortSuffix"  type="xsd:boolean"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

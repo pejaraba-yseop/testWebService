@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yseop-manager>
+  <application>
+    <web-services>
+        <web-service name=”cube-facts”>
+                <url>http://192.168.200.168:8080/OLAP/facts</url>
+                <healthcheck-url>http://192.168.200.168:8080/healthcheck</healthcheck-url>
+                <transfos>
+		            <transfo name="transformation1" default="true">
+                         <in-schema mime="application/json">$home$/dialog/facts_json_schema.json</in-schema>   
+                         <in>$home$/dialog/facts_xsl.xsl</in> 
+		            </transfo>
+        		</transfos>
+        </web-service>
+	</web-services>
+  </application>
+</yseop-manager>

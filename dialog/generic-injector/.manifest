@@ -1,0 +1,23 @@
+Generic injector v2.0.4
+
+/*
+2.0: 
+Compatibility with post-parfait
+Release Date : October 5, 2017
+
+2.0.1: 
+
+delete useless reference to chosen scripts
+
+2.0.2:
+
+fix layout issues in tab mode
+
+2.0.3: 
+
+use property label instead of property legend for radio and checkbox
+
+2.0.4 : 
+
+fix layout issues in area mode
+*/
